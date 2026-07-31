@@ -19,7 +19,7 @@ from supabase import create_client, Client
 TELEGRAM_BOT_TOKEN = "8805719889:AAG-ospZfYhBWfKfEX4sHbfl-b4LEyNJVPc"          # <-- Replace
 SUPABASE_URL = "https://qiotvvqlgajwvfcegnbz.supabase.co"
 SUPABASE_KEY = "sb_secret_ssmz9sOSczbXj1S1qlFFYw_DpM2zu5G"
-WEBHOOK_BASE = "https://ff-access-login.vercel.app"       # <-- Replace
+WEBHOOK_BASE = "https://ff-access-login-omega.vercel.app/"       # <-- Replace
 TABLE_NAME = "ff_bot_users"   # keep as is
 # -----------------------------------------------------------
 
