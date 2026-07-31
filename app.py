@@ -18,7 +18,7 @@ from supabase import create_client, Client
 # ---------- 🔴 EDIT THESE TWO WITH YOUR CREDENTIALS ----------
 TELEGRAM_BOT_TOKEN = "8805719889:AAG-ospZfYhBWfKfEX4sHbfl-b4LEyNJVPc"          # <-- Replace
 SUPABASE_URL = "https://qiotvvqlgajwvfcegnbz.supabase.co"
-SUPABASE_KEY = "sb_secret_m-q2f70i-u2LNR7CJwd7wg__-dwn6pU"
+SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFpb3R2dnFsZ2Fqd3ZmY2VnbmJ6Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4NTQ5NjQ3OSwiZXhwIjoyMTAxMDcyNDc5fQ.UKCYhYjo57GZt-M5RVRn1YElVL7J-YqTOQrQhZ4MyX8"
 WEBHOOK_BASE = "https://ff-access-login-omega.vercel.app/"       # <-- Replace
 TABLE_NAME = "ff_bot_users"   # keep as is
 # -----------------------------------------------------------
