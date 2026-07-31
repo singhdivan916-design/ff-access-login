@@ -1,5 +1,5 @@
 # ============================================================
-# SELF-CONTAINED TELEGRAM BOT – 100% ORIGINAL LOGIC
+# SELF-CONTAINED BOT – LAZY SUPABASE WITH GRACEFUL FAILURE
 # ============================================================
 
 import os, sys, time, json, base64, binascii, uuid
@@ -15,20 +15,37 @@ from google.protobuf import descriptor_pool, message_factory
 import blackboxprotobuf
 from supabase import create_client, Client
 
-# ---------- 🔴 EDIT THESE TWO WITH YOUR CREDENTIALS ----------
-TELEGRAM_BOT_TOKEN = "8805719889:AAG-ospZfYhBWfKfEX4sHbfl-b4LEyNJVPc"          # <-- Replace
+print("===== BOT STARTING =====")
+
+# ---------- YOUR UPDATED CREDENTIALS ----------
+TELEGRAM_BOT_TOKEN = "8805719889:AAG-ospZfYhBWfKfEX4sHbfl-b4LEyNJVPc"           # <-- Replace with your bot token
 SUPABASE_URL = "https://qiotvvqlgajwvfcegnbz.supabase.co"
 SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFpb3R2dnFsZ2Fqd3ZmY2VnbmJ6Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4NTQ5NjQ3OSwiZXhwIjoyMTAxMDcyNDc5fQ.UKCYhYjo57GZt-M5RVRn1YElVL7J-YqTOQrQhZ4MyX8"
-WEBHOOK_BASE = "https://ff-access-login-omega.vercel.app/"       # <-- Replace
-TABLE_NAME = "ff_bot_users"   # keep as is
-# -----------------------------------------------------------
+WEBHOOK_BASE = "https://ff-access-login-omega.vercel.app"
+TABLE_NAME = "ff_bot_users"
 
-if not all([TELEGRAM_BOT_TOKEN, SUPABASE_URL, SUPABASE_KEY, WEBHOOK_BASE]):
-    raise RuntimeError("Please fill in TELEGRAM_BOT_TOKEN and WEBHOOK_BASE in the script.")
+_supabase = None
+_supabase_error = None
 
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+def get_supabase():
+    global _supabase, _supabase_error
+    if _supabase is not None:
+        return _supabase
+    if _supabase_error is not None:
+        raise Exception(_supabase_error)
+    try:
+        print("Connecting to Supabase...")
+        _supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
+        # Test connection by querying the table (limit 1)
+        _supabase.table(TABLE_NAME).select("chat_id").limit(1).execute()
+        print("✅ Supabase connection successful.")
+        return _supabase
+    except Exception as e:
+        _supabase_error = f"Supabase error: {str(e)}. Please check your service_role key and table."
+        print(f"❌ {_supabase_error}")
+        raise Exception(_supabase_error)
 
-# ---------- EXACT ORIGINAL VARIABLES & FUNCTIONS ----------
+# ---------- EXACT ORIGINAL FUNCTIONS (unchanged) ----------
 mYdEsCrIpToR = b'\n\x08my.proto"\xae\t\n\x08GameData\x12\x11\n\ttimestamp\x18\x03 \x01(\t\x12\x11\n\tgame_name\x18\x04 \x01(\t\x12\x14\n\x0cgame_version\x18\x05 \x01(\x05\x12\x14\n\x0cversion_code\x18\x07 \x01(\t\x12\x0f\n\x07os_info\x18\x08 \x01(\t\x12\x13\n\x0bdevice_type\x18\t \x01(\t\x12\x18\n\x10network_provider\x18\n \x01(\t\x12\x17\n\x0fconnection_type\x18\x0b \x01(\t\x12\x14\n\x0cscreen_width\x18\x0c \x01(\x05\x12\x15\n\rscreen_height\x18\r \x01(\x05\x12\x0b\n\x03dpi\x18\x0e \x01(\t\x12\x10\n\x08cpu_info\x18\x0f \x01(\t\x12\x11\n\ttotal_ram\x18\x10 \x01(\x05\x12\x10\n\x08gpu_name\x18\x11 \x01(\t\x12\x13\n\x0bgpu_version\x18\x12 \x01(\t\x12\x0f\n\x07user_id\x18\x13 \x01(\t\x12\x12\n\nip_address\x18\x14 \x01(\t\x12\x10\n\x08language\x18\x15 \x01(\t\x12\x0f\n\x07open_id\x18\x16 \x01(\t\x12\x15\n\rplatform_type\x18\x17 \x01(\x05\x12\x1a\n\x12device_form_factor\x18\x18 \x01(\t\x12\x14\n\x0cdevice_model\x18\x19 \x01(\t\x12\x14\n\x0caccess_token\x18\x1d \x01(\t\x12\x18\n\x10unknown_field_30\x18\x1e \x01(\x05\x12"\n\x1asecondary_network_provider\x18) \x01(\t\x12!\n\x19secondary_connection_type\x18* \x01(\t\x12\x11\n\tunique_id\x18\x39 \x01(\t\x12\x10\n\x08field_60\x18< \x01(\x05\x12\x10\n\x08field_61\x18= \x01(\x05\x12\x10\n\x08field_62\x18> \x01(\x05\x12\x10\n\x08field_63\x18? \x01(\x05\x12\x10\n\x08field_64\x18@ \x01(\x05\x12\x10\n\x08field_65\x18A \x01(\x05\x12\x10\n\x08field_66\x18B \x01(\x05\x12\x10\n\x08field_67\x18C \x01(\x05\x12\x10\n\x08field_70\x18F \x01(\x05\x12\x10\n\x08field_73\x18I \x01(\x05\x12\x14\n\x0clibrary_path\x18J \x01(\t\x12\x10\n\x08field_76\x18L \x01(\x05\x12\x10\n\x08apk_info\x18M \x01(\t\x12\x10\n\x08field_78\x18N \x01(\x05\x12\x10\n\x08field_79\x18O \x01(\x05\x12\x17\n\x0fos_architecture\x18Q \x01(\t\x12\x14\n\x0cbuild_number\x18S \x01(\t\x12\x10\n\x08field_85\x18U \x01(\x05\x12\x18\n\x10graphics_backend\x18V \x01(\t\x12\x19\n\x11max_texture_units\x18W \x01(\x05\x12\x15\n\rrendering_api\x18X \x01(\x05\x12\x18\n\x10encoded_field_89\x18Y \x01(\t\x12\x10\n\x08field_92\x18\\ \x01(\x05\x12\x13\n\x0bmarketplace\x18] \x01(\t\x12\x16\n\x0eencryption_key\x18^ \x01(\t\x12\x15\n\rtotal_storage\x18_ \x01(\x05\x12\x10\n\x08field_97\x18a \x01(\x05\x12\x10\n\x08field_98\x18b \x01(\x05\x12\x10\n\x08field_99\x18c \x01(\t\x12\x11\n\tfield_100\x18d \x01(\tb\x06proto3'
 
 oUtPuTdEsCrIpToR = b'\n\x13jwt_generator.proto"\xd2\x02\n\nGarena_420\x12\x12\n\naccount_id\x18\x01 \x01(\x03\x12\x0e\n\x06region\x18\x02 \x01(\t\x12\r\n\x05place\x18\x03 \x01(\t\x12\x10\n\x08location\x18\x04 \x01(\t\x12\x0e\n\x06status\x18\x05 \x01(\t\x12\r\n\x05token\x18\x08 \x01(\t\x12\n\n\x02id\x18\t \x01(\x05\x12\x0b\n\x03api\x18\n \x01(\t\x12\x0e\n\x06number\x18\x0c \x01(\x05\x12\x1e\n\tGarena420\x18\x0f \x01(\x0b\x32\x0b.Garena_420\x12\x0c\n\x04area\x18\x10 \x01(\t\x12\x11\n\tmain_area\x18\x12 \x01(\t\x12\x0c\n\x04city\x18\x13 \x01(\t\x12\x0c\n\x04name\x18\x14 \x01(\t\x12\x11\n\ttimestamp\x18\x15 \x01(\x03\x12\x0e\n\x06binary\x18\x16 \x01(\x0c\x12\x13\n\x0bbinary_data\x18\x17 \x01(\x0c\x1a"\n\x12Decrypted_Payloads\x12\x0c\n\x04type\x18\x01 \x01(\x05b\x06proto3'
@@ -166,7 +183,7 @@ def gEnErAtEmAjOrLoGiNrEsP(aCcEsStOkEn, oPeNiD, bAsEfIeLdS, pReFeRrEdPlAtFoRm=No
         time.sleep(0.1)
     raise Exception("No valid response after trying all platforms 1-9")
 
-# ---------- TELEGRAM HELPERS (using TABLE_NAME) ----------
+# ---------- TELEGRAM HELPERS (with lazy Supabase) ----------
 def send_telegram_message(chat_id: int, text: str, parse_mode: str = "HTML", reply_markup: dict = None):
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     payload = {"chat_id": chat_id, "text": text, "parse_mode": parse_mode}
@@ -189,12 +206,22 @@ def answer_callback_query(callback_id: str, text: str = None, show_alert: bool =
         pass
 
 def get_user_data(chat_id: int):
-    result = supabase.table(TABLE_NAME).select("*").eq("chat_id", chat_id).execute()
-    return result.data[0] if result.data else None
+    try:
+        supabase = get_supabase()
+        result = supabase.table(TABLE_NAME).select("*").eq("chat_id", chat_id).execute()
+        return result.data[0] if result.data else None
+    except Exception as e:
+        print(f"get_user_data error: {e}")
+        return None
 
 def save_user_data(chat_id: int, data: dict):
-    data["chat_id"] = chat_id
-    supabase.table(TABLE_NAME).upsert(data).execute()
+    try:
+        supabase = get_supabase()
+        data["chat_id"] = chat_id
+        supabase.table(TABLE_NAME).upsert(data).execute()
+    except Exception as e:
+        print(f"save_user_data error: {e}")
+        raise e
 
 def main_menu_keyboard():
     return {
@@ -213,14 +240,20 @@ def send_main_menu(chat_id: int, text: str = None):
     send_telegram_message(chat_id, text, reply_markup=main_menu_keyboard())
 
 def process_callback(chat_id: int, callback_id: str, data: str):
-    user = get_user_data(chat_id)
     if data == "login":
         answer_callback_query(callback_id, "Please send your Access Token now.")
-        supabase.table(TABLE_NAME).upsert({"chat_id": chat_id, "state": "awaiting_token"}).execute()
+        try:
+            supabase = get_supabase()
+            supabase.table(TABLE_NAME).upsert({"chat_id": chat_id, "state": "awaiting_token"}).execute()
+        except Exception as e:
+            send_telegram_message(chat_id, f"❌ Database error: {str(e)}")
+            return
         send_telegram_message(chat_id, "🔑 Please send your Access Token as a text message.\nType /cancel to abort.")
         return
+
     elif data == "status":
         answer_callback_query(callback_id)
+        user = get_user_data(chat_id)
         if not user or user.get('status') != 'active':
             send_telegram_message(chat_id, "ℹ️ No active session. Use 'Login Game' to create one.", reply_markup=main_menu_keyboard())
             return
@@ -231,8 +264,12 @@ def process_callback(chat_id: int, callback_id: str, data: str):
         else:
             duration = "N/A"
         sessions_count = user.get('sessions_count', 0)
-        total_users_res = supabase.table(TABLE_NAME).select("chat_id", count="exact").execute()
-        total_users = total_users_res.count if total_users_res.count else 0
+        try:
+            supabase = get_supabase()
+            total_users_res = supabase.table(TABLE_NAME).select("chat_id", count="exact").execute()
+            total_users = total_users_res.count if total_users_res.count else 0
+        except:
+            total_users = "N/A"
         msg = (
             f"📊 <b>Session Status</b>\n"
             f"Status: 🟢 Active\n"
@@ -250,14 +287,22 @@ def process_callback(chat_id: int, callback_id: str, data: str):
         )
         send_telegram_message(chat_id, msg, reply_markup=main_menu_keyboard())
         return
+
     elif data == "stop":
         answer_callback_query(callback_id)
+        user = get_user_data(chat_id)
         if not user or user.get('status') != 'active':
             send_telegram_message(chat_id, "❌ No active session to stop.", reply_markup=main_menu_keyboard())
             return
-        supabase.table(TABLE_NAME).update({"status": "inactive"}).eq("chat_id", chat_id).execute()
+        try:
+            supabase = get_supabase()
+            supabase.table(TABLE_NAME).update({"status": "inactive"}).eq("chat_id", chat_id).execute()
+        except Exception as e:
+            send_telegram_message(chat_id, f"❌ Error stopping session: {str(e)}")
+            return
         send_telegram_message(chat_id, "✅ Session stopped successfully!\n\nYour active session has been terminated.\nYou can now create a new session by pressing 'Login Game'.", reply_markup=main_menu_keyboard())
         return
+
     elif data == "about":
         answer_callback_query(callback_id)
         about_text = (
@@ -275,6 +320,7 @@ def process_callback(chat_id: int, callback_id: str, data: str):
         )
         send_telegram_message(chat_id, about_text, reply_markup=main_menu_keyboard())
         return
+
     elif data == "help":
         answer_callback_query(callback_id)
         help_text = (
@@ -291,11 +337,17 @@ def process_callback(chat_id: int, callback_id: str, data: str):
         )
         send_telegram_message(chat_id, help_text, reply_markup=main_menu_keyboard())
         return
+
     elif data == "cancel":
         answer_callback_query(callback_id, "Cancelled.")
-        supabase.table(TABLE_NAME).update({"state": None}).eq("chat_id", chat_id).execute()
+        try:
+            supabase = get_supabase()
+            supabase.table(TABLE_NAME).update({"state": None}).eq("chat_id", chat_id).execute()
+        except:
+            pass
         send_main_menu(chat_id, "Action cancelled.")
         return
+
     else:
         answer_callback_query(callback_id, "Unknown action.")
         send_main_menu(chat_id)
@@ -303,11 +355,17 @@ def process_callback(chat_id: int, callback_id: str, data: str):
 def process_text_message(chat_id: int, text: str):
     user = get_user_data(chat_id)
     state = user.get('state') if user else None
+
     if text.lower() == '/cancel':
         if state:
-            supabase.table(TABLE_NAME).update({"state": None}).eq("chat_id", chat_id).execute()
+            try:
+                supabase = get_supabase()
+                supabase.table(TABLE_NAME).update({"state": None}).eq("chat_id", chat_id).execute()
+            except:
+                pass
         send_main_menu(chat_id, "Cancelled.")
         return
+
     if state == "awaiting_token":
         aCcEsStOkEn = text.strip()
         if not aCcEsStOkEn:
@@ -320,13 +378,12 @@ def process_text_message(chat_id: int, text: str):
             send_telegram_message(chat_id, "🔄 Inspecting token for open_id...")
             oPeNiD = iNsPeCtToKeN(aCcEsStOkEn)
             send_telegram_message(chat_id, f"✅ OpenID: <code>{oPeNiD}</code>")
-            # Generate session ID
             session_id = aCcOuNtUiD if aCcOuNtUiD != 'N/A' else str(uuid.uuid4()).replace('-', '')
+            supabase = get_supabase()
             existing = supabase.table(TABLE_NAME).select("session_id").eq("session_id", session_id).execute()
             if existing.data:
                 session_id = str(uuid.uuid4()).replace('-', '')
             server_url = f"{WEBHOOK_BASE}/{session_id}/"
-            # Store session data
             data = {
                 "access_token": aCcEsStOkEn,
                 "open_id": oPeNiD,
@@ -340,9 +397,8 @@ def process_text_message(chat_id: int, text: str):
                 "state": None,
                 "sessions_count": (user.get('sessions_count', 0) + 1) if user else 1,
             }
-            save_user_data(chat_id, data)
+            supabase.table(TABLE_NAME).upsert(data).execute()
 
-            # ----- SEND JSON FILE -----
             json_content = json.dumps({"serverUrl": server_url}, indent=2)
             telegram_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendDocument"
             payload = {
@@ -378,7 +434,11 @@ def process_text_message(chat_id: int, text: str):
             send_telegram_message(chat_id, "🔙 Return to main menu:", reply_markup=main_menu_keyboard())
         except Exception as e:
             send_telegram_message(chat_id, f"❌ Error: {str(e)}", reply_markup=main_menu_keyboard())
-            supabase.table(TABLE_NAME).update({"state": None}).eq("chat_id", chat_id).execute()
+            try:
+                supabase = get_supabase()
+                supabase.table(TABLE_NAME).update({"state": None}).eq("chat_id", chat_id).execute()
+            except:
+                pass
         return
     else:
         send_main_menu(chat_id)
@@ -418,6 +478,11 @@ def ping(session_id):
 
 @app.route("/<session_id>/MajorLogin", methods=["POST"])
 def majorlogin(session_id):
+    try:
+        supabase = get_supabase()
+    except Exception as e:
+        return Response(f"Supabase error: {e}", status=500)
+
     result = supabase.table(TABLE_NAME).select("*").eq("session_id", session_id).execute()
     if not result.data:
         return Response("Session not found", status=404)
@@ -457,6 +522,10 @@ def majorlogin(session_id):
 @app.route("/", methods=["GET"])
 def index():
     return "Bot is running.", 200
+
+@app.route("/test", methods=["GET"])
+def test():
+    return "Test OK", 200
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
