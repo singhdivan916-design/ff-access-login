@@ -1,0 +1,6 @@
+requests==2.31.0
+pycryptodome==3.19.1
+protobuf==4.25.3
+blackboxprotobuf==1.0.1
+supabase==2.3.0
+Flask==3.0.2
