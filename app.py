@@ -32,7 +32,7 @@ HTML_TEMPLATE = """
 </head>
 <body>
     <div id="toolbar">
-        <span style="color: #0f0; font-weight: bold;">Termux Web</span>
+        <span style="color: #0f0; font-weight: bold;">Termux Web (Debug)</span>
         <button id="uploadBtn">📤 Upload</button>
         <button id="downloadBtn">📥 Download</button>
         <button id="clearBtn">🗑 Clear</button>
@@ -42,64 +42,127 @@ HTML_TEMPLATE = """
     <input type="file" id="fileInput" multiple />
     <script src="https://cdn.jsdelivr.net/npm/xterm/lib/xterm.js"></script>
     <script>
-        const term = new Terminal({ cursorBlink: true, theme: { background: '#1e1e1e', foreground: '#f0f0f0', cursor: '#fff', green: '#00ff00' }, fontFamily: '"Courier New", monospace', fontSize: 14, lineHeight: 1.2 });
+        // Enable console logging for debugging
+        console.log("Termux Web client loaded");
+
+        const term = new Terminal({
+            cursorBlink: true,
+            theme: { background: '#1e1e1e', foreground: '#f0f0f0', cursor: '#fff', green: '#00ff00' },
+            fontFamily: '"Courier New", monospace',
+            fontSize: 14,
+            lineHeight: 1.2
+        });
+
         const container = document.getElementById('terminal-container');
         term.open(container);
         term.focus();
+
         let cwd = localStorage.getItem('termux_cwd') || '/tmp';
         let history = JSON.parse(localStorage.getItem('termux_history') || '[]');
         let histIndex = history.length;
         let currentLine = '';
-        function updateCwdDisplay() { document.getElementById('cwdDisplay').textContent = cwd; localStorage.setItem('termux_cwd', cwd); }
+
+        function updateCwdDisplay() {
+            document.getElementById('cwdDisplay').textContent = cwd;
+            localStorage.setItem('termux_cwd', cwd);
+        }
         updateCwdDisplay();
 
+        // ----- Command execution with debug logs -----
         async function executeCommand(cmd) {
+            console.log("Executing command:", cmd, "in cwd:", cwd);
             try {
                 const resp = await fetch('/api/command', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ command: cmd, cwd })
                 });
+                console.log("Response status:", resp.status);
                 const data = await resp.json();
-                if (data.error) { term.writeln('\\x1b[1;31mError: ' + data.error + '\\x1b[0m'); }
-                else {
+                console.log("Response data:", data);
+
+                if (data.error) {
+                    term.writeln('\\x1b[1;31mError: ' + data.error + '\\x1b[0m');
+                } else {
                     if (data.stdout) term.write(data.stdout);
                     if (data.stderr) term.write('\\x1b[1;31m' + data.stderr + '\\x1b[0m');
-                    if (data.new_cwd) { cwd = data.new_cwd; updateCwdDisplay(); }
+                    if (data.new_cwd) {
+                        cwd = data.new_cwd;
+                        updateCwdDisplay();
+                    }
                 }
-            } catch (e) { term.writeln('\\x1b[1;31mNetwork error: ' + e.message + '\\x1b[0m'); }
+            } catch (e) {
+                console.error("Fetch error:", e);
+                term.writeln('\\x1b[1;31mNetwork error: ' + e.message + '\\x1b[0m');
+            }
         }
 
-        function prompt() { term.write('\\x1b[32m$ \\x1b[0m'); }
+        function prompt() {
+            term.write('\\x1b[32m$ \\x1b[0m');
+        }
 
+        // ----- Input handling -----
         term.onData((data) => {
-            if (data === '\\r') {
-                term.write('\\r\\n');
+            console.log("Key pressed (raw):", JSON.stringify(data));
+            if (data === '\r' || data === '\n') { // Enter key
+                term.write('\r\n');
                 const cmd = currentLine.trim();
                 currentLine = '';
-                if (cmd) { history.push(cmd); localStorage.setItem('termux_history', JSON.stringify(history)); histIndex = history.length; executeCommand(cmd).then(() => prompt()); }
-                else { prompt(); }
-            } else if (data === '\\x7f') {
-                if (currentLine.length > 0) { currentLine = currentLine.slice(0, -1); term.write('\\b \\b'); }
-            } else if (data === '\\x03') {
-                term.writeln('^C'); currentLine = ''; prompt();
-            } else if (data === '\\x1b[A') {
-                if (histIndex > 0) { histIndex--; const cmd = history[histIndex] || ''; for (let i=0; i<currentLine.length; i++) term.write('\\b \\b'); currentLine = cmd; term.write(cmd); }
-            } else if (data === '\\x1b[B') {
-                if (histIndex < history.length - 1) { histIndex++; const cmd = history[histIndex] || ''; for (let i=0; i<currentLine.length; i++) term.write('\\b \\b'); currentLine = cmd; term.write(cmd); }
-                else { histIndex = history.length; for (let i=0; i<currentLine.length; i++) term.write('\\b \\b'); currentLine = ''; }
+                if (cmd) {
+                    history.push(cmd);
+                    localStorage.setItem('termux_history', JSON.stringify(history));
+                    histIndex = history.length;
+                    executeCommand(cmd).then(() => prompt());
+                } else {
+                    prompt();
+                }
+            } else if (data === '\x7f') { // Backspace
+                if (currentLine.length > 0) {
+                    currentLine = currentLine.slice(0, -1);
+                    term.write('\b \b');
+                }
+            } else if (data === '\x03') { // Ctrl+C
+                term.writeln('^C');
+                currentLine = '';
+                prompt();
+            } else if (data === '\x1b[A') { // Up arrow
+                if (histIndex > 0) {
+                    histIndex--;
+                    const cmd = history[histIndex] || '';
+                    for (let i = 0; i < currentLine.length; i++) term.write('\b \b');
+                    currentLine = cmd;
+                    term.write(cmd);
+                }
+            } else if (data === '\x1b[B') { // Down arrow
+                if (histIndex < history.length - 1) {
+                    histIndex++;
+                    const cmd = history[histIndex] || '';
+                    for (let i = 0; i < currentLine.length; i++) term.write('\b \b');
+                    currentLine = cmd;
+                    term.write(cmd);
+                } else {
+                    histIndex = history.length;
+                    for (let i = 0; i < currentLine.length; i++) term.write('\b \b');
+                    currentLine = '';
+                }
             } else if (data.length === 1 && data >= ' ' && data <= '~') {
-                currentLine += data; term.write(data);
+                currentLine += data;
+                term.write(data);
             }
         });
 
+        // ----- File upload -----
         document.getElementById('uploadBtn').onclick = () => document.getElementById('fileInput').click();
         document.getElementById('fileInput').onchange = async (e) => {
             for (let file of e.target.files) {
                 const reader = new FileReader();
                 reader.onload = async (ev) => {
                     const content = ev.target.result.split(',')[1];
-                    const resp = await fetch('/api/upload', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name: file.name, content, cwd }) });
+                    const resp = await fetch('/api/upload', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ name: file.name, content, cwd })
+                    });
                     const result = await resp.json();
                     if (result.error) alert('Upload error: ' + result.error);
                     else term.writeln('\\x1b[32mUploaded: ' + file.name + '\\x1b[0m');
@@ -135,8 +198,8 @@ HTML_TEMPLATE = """
         window.addEventListener('resize', resize);
         setTimeout(resize, 100);
 
-        term.writeln('\\x1b[1;32mWelcome to Termux Web (Vercel)!\\x1b[0m');
-        term.writeln('Note: Interactive commands (vim, top, etc.) are not supported.\\n');
+        term.writeln('\\x1b[1;32mWelcome to Termux Web (Debug)!\\x1b[0m');
+        term.writeln('Open the browser console (F12) to see logs.');
         prompt();
     </script>
 </body>
@@ -149,12 +212,21 @@ def index():
 
 @app.route('/api/command', methods=['POST'])
 def handle_command():
+    # Log incoming request
+    print("Received command request")
     data = request.get_json()
+    print("Request data:", data)
+    if not data:
+        return jsonify({'error': 'No JSON body'}), 400
+
     command = data.get('command', '').strip()
     cwd = data.get('cwd', '/tmp')
+    print(f"Command: {command}, cwd: {cwd}")
+
     if not command:
         return jsonify({'error': 'No command'})
 
+    # Handle 'cd' built-in manually
     if command.startswith('cd '):
         parts = shlex.split(command)
         target = parts[1] if len(parts) >= 2 else os.path.expanduser('~')
@@ -179,6 +251,7 @@ def handle_command():
             cwd=cwd
         )
         stdout, stderr = proc.communicate(timeout=30)
+        print(f"Command output: stdout={stdout}, stderr={stderr}")
         if marker in stdout:
             parts = stdout.split(marker)
             output = parts[0].rstrip('\n')
@@ -192,6 +265,7 @@ def handle_command():
         proc.kill()
         return jsonify({'error': 'Command timed out'})
     except Exception as e:
+        print(f"Exception: {e}")
         return jsonify({'error': str(e)})
 
 @app.route('/api/upload', methods=['POST'])
@@ -208,8 +282,10 @@ def upload_file():
         content = base64.b64decode(data['content'])
         with open(filepath, 'wb') as f:
             f.write(content)
+        print(f"Uploaded file to {filepath}")
         return jsonify({'success': True})
     except Exception as e:
+        print(f"Upload error: {e}")
         return jsonify({'error': str(e)}), 500
 
 @app.route('/api/download', methods=['GET'])
