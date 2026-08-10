@@ -1,2 +1,5 @@
-python-telegram-bot==22.7
-requests
+Flask==2.3.3
+requests==2.31.0
+pycryptodome==3.19.1
+protobuf==4.25.1
+urllib3==2.0.7
