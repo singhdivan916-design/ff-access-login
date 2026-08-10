@@ -472,18 +472,15 @@ def create_application():
     return app
 
 # ---------- Vercel entry point ----------
-# This block runs when the module is imported on Vercel
 logger.info("Initializing bot...")
 _app = create_application()
 
-# Safely get the ASGI app – try both methods
+# Safely build the ASGI app – never directly use .webhook_app without fallback
 try:
-    # Modern PTB (>= v20.0) has webhook_app
     app = _app.webhook_app
     logger.info("Using app.webhook_app")
 except AttributeError:
-    # Fallback for older versions or internal builds
-    logger.warning("webhook_app attribute not found, using _build_webhook_app()")
+    logger.warning("webhook_app missing, using _build_webhook_app()")
     app = _app._build_webhook_app()
     logger.info("Built webhook app via _build_webhook_app()")
 
