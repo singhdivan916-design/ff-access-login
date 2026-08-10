@@ -1,0 +1,5924 @@
+{
+  "verified": {
+    "id": "6147565374289220368",
+    "fallback": "✅",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "flex": {
+    "id": "6147464060305676048",
+    "fallback": "😎",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "blue_verification": {
+    "id": "6147524086768604985",
+    "fallback": "💎",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "frozen": {
+    "id": "5449449325434266744",
+    "fallback": "❄️",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "crying": {
+    "id": "6273840152980755328",
+    "fallback": "😭",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "smiling": {
+    "id": "6276057176444246654",
+    "fallback": "🙂",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "seeing_up": {
+    "id": "6273997026661241933",
+    "fallback": "😋",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "teeth": {
+    "id": "6273726078649372769",
+    "fallback": "😁",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "done": {
+    "id": "6274007313107915274",
+    "fallback": "👍",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "blue_badge": {
+    "id": "5978776771623914876",
+    "fallback": "🟫",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "black_badge": {
+    "id": "5978686323907628843",
+    "fallback": "🔸",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "busy_tag": {
+    "id": "5852873584912896283",
+    "fallback": "🟧",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "instagram": {
+    "id": "5895297528106061174",
+    "fallback": "🌐",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "telegram": {
+    "id": "5895735846698487922",
+    "fallback": "🌐",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "whatsapp": {
+    "id": "5895343514320899727",
+    "fallback": "🌐",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "india": {
+    "id": "5913754823643107921",
+    "fallback": "🇮🇳",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "dollar": {
+    "id": "5197434882321567830",
+    "fallback": "💵",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "top": {
+    "id": "5463071033256848094",
+    "fallback": "🔝",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "bro": {
+    "id": "5463256910851546817",
+    "fallback": "🤝",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "yes": {
+    "id": "5463423955014529788",
+    "fallback": "👌",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "lock": {
+    "id": "5465443379917629504",
+    "fallback": "🔓",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "good": {
+    "id": "5465465194056525619",
+    "fallback": "👍",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "sigma": {
+    "id": "6235620067942341623",
+    "fallback": "🥃",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "don": {
+    "id": "6235717714023814969",
+    "fallback": "🍂",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "skills": {
+    "id": "6235593671073339928",
+    "fallback": "💀",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "heart": {
+    "id": "6147617184479711380",
+    "fallback": "❤️‍🔥",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "stars": {
+    "id": "6235403472741603087",
+    "fallback": "⭐",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "github": {
+    "id": "5346181118884331907",
+    "fallback": "📱",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "motion": {
+    "id": "5971944878815317190",
+    "fallback": "💠",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "bottle": {
+    "id": "6129399728506412489",
+    "fallback": "🍼",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "check": {
+    "id": "6129812419028982717",
+    "fallback": "✅",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "cry": {
+    "id": "6129574787078429498",
+    "fallback": "😪",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "exclaim": {
+    "id": "6129477982810545152",
+    "fallback": "‼️",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "nerd": {
+    "id": "6129550284290006595",
+    "fallback": "🧐",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "sparkle": {
+    "id": "6129479035077531636",
+    "fallback": "✨",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "heartfire": {
+    "id": "6129932613688764241",
+    "fallback": "❤️‍🔥",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "white_heart": {
+    "id": "6129444065453808638",
+    "fallback": "🤍",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "tick": {
+    "id": "6129828611055689014",
+    "fallback": "✔️",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "check2": {
+    "id": "6129472184604695207",
+    "fallback": "✅",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "diamond": {
+    "id": "6129760505759276442",
+    "fallback": "💠",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "teddy": {
+    "id": "6129959208126258284",
+    "fallback": "🧸",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "thumbs": {
+    "id": "6129705667616841573",
+    "fallback": "👍",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "megaphone": {
+    "id": "6129433877791382400",
+    "fallback": "📣",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "crown": {
+    "id": "6129705083501293112",
+    "fallback": "👑",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "gift": {
+    "id": "6131660826924292492",
+    "fallback": "🎁",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "gift2": {
+    "id": "6129727043669072880",
+    "fallback": "🎁",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "gift3": {
+    "id": "6129415619885407680",
+    "fallback": "🎁",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "star": {
+    "id": "6129909635613726974",
+    "fallback": "⭐",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "top2": {
+    "id": "6129627894349045589",
+    "fallback": "🔝",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "gift4": {
+    "id": "6129870783339567154",
+    "fallback": "🎁",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "calendar": {
+    "id": "6129779562529168023",
+    "fallback": "🗓",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "smile": {
+    "id": "6129772480128097710",
+    "fallback": "😊",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "thought": {
+    "id": "6129939837823753679",
+    "fallback": "💭",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "pin": {
+    "id": "6129694470637100146",
+    "fallback": "📌",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "pin2": {
+    "id": "6129434968713076807",
+    "fallback": "📌",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "money": {
+    "id": "6129732880529628243",
+    "fallback": "💵",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "up": {
+    "id": "6129570565125577536",
+    "fallback": "🔼",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "warning": {
+    "id": "6129782440157256336",
+    "fallback": "⚠️",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "money2": {
+    "id": "6129731974291527294",
+    "fallback": "💸",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "boom": {
+    "id": "6129532314146838421",
+    "fallback": "💥",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "bolt": {
+    "id": "6129805465476929485",
+    "fallback": "⚡",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "hat": {
+    "id": "6129650399977675538",
+    "fallback": "🎩",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "chart": {
+    "id": "6129801569941592173",
+    "fallback": "📊",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "gift5": {
+    "id": "6129769198773083022",
+    "fallback": "🎁",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "heart2": {
+    "id": "6129708236007283169",
+    "fallback": "❤️",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "lock2": {
+    "id": "6129906126625447892",
+    "fallback": "🔒",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "crown2": {
+    "id": "6129553312241949602",
+    "fallback": "👑",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "thumbs2": {
+    "id": "6129494286506401122",
+    "fallback": "👍",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "crown3": {
+    "id": "6129778965528713511",
+    "fallback": "👑",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "star2": {
+    "id": "6129915811776698328",
+    "fallback": "🌟",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "skull": {
+    "id": "6132184924603554220",
+    "fallback": "💀",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "starstruck": {
+    "id": "6129572317472233948",
+    "fallback": "🤩",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "heart3": {
+    "id": "6156715484285770345",
+    "fallback": "❤",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "pin3": {
+    "id": "6131886699254388574",
+    "fallback": "📌",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "speaker": {
+    "id": "6129492160497589882",
+    "fallback": "🔈",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "angel": {
+    "id": "6129518870899203008",
+    "fallback": "👼",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "devil": {
+    "id": "6129522839448984992",
+    "fallback": "😈",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "wink": {
+    "id": "6129903231817488942",
+    "fallback": "😉",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "check3": {
+    "id": "6129814111246097614",
+    "fallback": "✅",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "car": {
+    "id": "6129643455015557847",
+    "fallback": "🚘",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "diamond2": {
+    "id": "6129736819014639296",
+    "fallback": "🔸",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "sob": {
+    "id": "6129622134797900004",
+    "fallback": "😭",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "star3": {
+    "id": "6129704267457501209",
+    "fallback": "⭐",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "star4": {
+    "id": "6129653943325694007",
+    "fallback": "⭐",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "star5": {
+    "id": "6132019972089585518",
+    "fallback": "⭐",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "glow": {
+    "id": "6129405805885135490",
+    "fallback": "💫",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "rocket": {
+    "id": "6129639980387015660",
+    "fallback": "🚀",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "teddy2": {
+    "id": "6129650743575060215",
+    "fallback": "🧸",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "bolt2": {
+    "id": "6129817830687775854",
+    "fallback": "⚡",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "glow2": {
+    "id": "6129812371784342357",
+    "fallback": "💫",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "star6": {
+    "id": "6129546277085520554",
+    "fallback": "🌟",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "star7": {
+    "id": "6129700535130922338",
+    "fallback": "⭐",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "calendar2": {
+    "id": "6129771638314523716",
+    "fallback": "🗓",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "boom2": {
+    "id": "6129780730760273719",
+    "fallback": "💥",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "money_mouth": {
+    "id": "6129488844782836766",
+    "fallback": "🤑",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "star8": {
+    "id": "6129672630728400259",
+    "fallback": "🌟",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "fire": {
+    "id": "6129792056589031358",
+    "fallback": "🔥",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "champagne": {
+    "id": "6129432683790473996",
+    "fallback": "🍾",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "party": {
+    "id": "6129579803600231171",
+    "fallback": "🎉",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "star9": {
+    "id": "6129692490657175257",
+    "fallback": "🌟",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "star10": {
+    "id": "6129542888356321971",
+    "fallback": "🌟",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "star11": {
+    "id": "6129566600870764865",
+    "fallback": "🌟",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "star12": {
+    "id": "6129846551134084367",
+    "fallback": "🌟",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "gift6": {
+    "id": "6129497211379129336",
+    "fallback": "🎁",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "flag": {
+    "id": "6129499663805456653",
+    "fallback": "🚩",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "email": {
+    "id": "6129432481927010933",
+    "fallback": "✉️",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "crown4": {
+    "id": "6129635212973316679",
+    "fallback": "👑",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "tongue": {
+    "id": "6132195782280879053",
+    "fallback": "😛",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "relieved": {
+    "id": "6129873716802231439",
+    "fallback": "😌",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "indian": {
+    "id": "6129712921816604452",
+    "fallback": "🇮🇳",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "earth": {
+    "id": "6129903927602190764",
+    "fallback": "🌎",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "card": {
+    "id": "6129926111108275647",
+    "fallback": "💳",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "money3": {
+    "id": "6129680679497111287",
+    "fallback": "💸",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "top3": {
+    "id": "6129704739903906195",
+    "fallback": "🔝",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "indian2": {
+    "id": "6129782715035163979",
+    "fallback": "🇮🇳",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "indian3": {
+    "id": "6129630071897462884",
+    "fallback": "🇮🇳",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "cry2": {
+    "id": "6129704885932794253",
+    "fallback": "😭",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "shocked": {
+    "id": "6129888444245089008",
+    "fallback": "😯",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "skull2": {
+    "id": "6129889801454754893",
+    "fallback": "☠️",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "check4": {
+    "id": "6129891098534877664",
+    "fallback": "✅",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "cat": {
+    "id": "6129625171339778354",
+    "fallback": "🐈‍⬛",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "gift7": {
+    "id": "6129650777934798600",
+    "fallback": "🎁",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "white": {
+    "id": "6129780378572954907",
+    "fallback": "⬜️",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "eyes": {
+    "id": "6129879029676776924",
+    "fallback": "👀",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "gift8": {
+    "id": "6129782839589214594",
+    "fallback": "🎁",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "heartfire2": {
+    "id": "6129616057419175458",
+    "fallback": "❤️‍🔥",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "bell": {
+    "id": "6129577213734952104",
+    "fallback": "🔔",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "skull3": {
+    "id": "6129631914438434952",
+    "fallback": "💀",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "diamond3": {
+    "id": "6129509499280563691",
+    "fallback": "💎",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "disguise": {
+    "id": "6129781254746282923",
+    "fallback": "🥸",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "star101": {
+    "id": "6129455898088709012",
+    "fallback": "⭐",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "moai": {
+    "id": "6129776848109836451",
+    "fallback": "🗿",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "xmas": {
+    "id": "6129470861754771141",
+    "fallback": "🎄",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "blue_heart": {
+    "id": "6129736771769997767",
+    "fallback": "💙",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "link": {
+    "id": "6129589862413638401",
+    "fallback": "🔗",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "thumbs_up": {
+    "id": "6129872028880083998",
+    "fallback": "👍",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "block": {
+    "id": "6129840374971112593",
+    "fallback": "🚫",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "check_mark": {
+    "id": "6129776315533893189",
+    "fallback": "✔️",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "gem": {
+    "id": "6129410405795110009",
+    "fallback": "💎",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "bubble": {
+    "id": "6129579597441801084",
+    "fallback": "💬",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "heart_fire": {
+    "id": "6129913724422593277",
+    "fallback": "❤️‍🔥",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "ribbon": {
+    "id": "6129668331466135693",
+    "fallback": "🎀",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "bookmark": {
+    "id": "6129746001654718223",
+    "fallback": "🔖",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "bag": {
+    "id": "6129574671114313022",
+    "fallback": "🛍",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "bell2": {
+    "id": "6129652186684070216",
+    "fallback": "🔔",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "storm": {
+    "id": "6129769130053605799",
+    "fallback": "🌩",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "gift_heart": {
+    "id": "6129895818703936830",
+    "fallback": "💝",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "hearts": {
+    "id": "6129476453802188018",
+    "fallback": "💕",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "ghost": {
+    "id": "6129758830722030858",
+    "fallback": "👻",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "heart_arrow": {
+    "id": "6129602914819250817",
+    "fallback": "💘",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "slider": {
+    "id": "6129544215501216365",
+    "fallback": "🎚",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "alarm": {
+    "id": "6129532640564354033",
+    "fallback": "🚨",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "gift9": {
+    "id": "6129520790749584124",
+    "fallback": "🎁",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "pleading": {
+    "id": "6129517792862413944",
+    "fallback": "🥹",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "smile2": {
+    "id": "6129863473305230077",
+    "fallback": "😊",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "slight_smile": {
+    "id": "6129440444796378483",
+    "fallback": "🙂",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "thumbs3": {
+    "id": "6129443429798648428",
+    "fallback": "👍",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "smile3": {
+    "id": "6129521443584612989",
+    "fallback": "😊",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "angry": {
+    "id": "6129593109408913890",
+    "fallback": "😠",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "unamused": {
+    "id": "6129553763213515073",
+    "fallback": "😒",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "point_up": {
+    "id": "6129523887421006760",
+    "fallback": "👆",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "cursing": {
+    "id": "6129530544620314433",
+    "fallback": "🤬",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "exclaim2": {
+    "id": "6129610250623393142",
+    "fallback": "‼️",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "joy": {
+    "id": "6129600178925083831",
+    "fallback": "😂",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "star13": {
+    "id": "6129418755211533815",
+    "fallback": "🌟",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "blue_heart2": {
+    "id": "6129700689749744824",
+    "fallback": "💙",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "star14": {
+    "id": "6129672231296440969",
+    "fallback": "🌟",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "gift10": {
+    "id": "6129741083917162817",
+    "fallback": "🎁",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "apple": {
+    "id": "6129741453284350735",
+    "fallback": "🍏",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "angel2": {
+    "id": "6129700595260463994",
+    "fallback": "👼",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "devil2": {
+    "id": "6129766986864924223",
+    "fallback": "😈",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "star15": {
+    "id": "6129421254882500490",
+    "fallback": "⭐",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "lock3": {
+    "id": "6129731845442510016",
+    "fallback": "🔐",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "ring": {
+    "id": "6129913342170506824",
+    "fallback": "💍",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "trash": {
+    "id": "6129486856212979482",
+    "fallback": "🗑️",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "top4": {
+    "id": "6129409825974525149",
+    "fallback": "🔝",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "skull4": {
+    "id": "6129711392808247546",
+    "fallback": "💀",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "moai2": {
+    "id": "6129410818111970687",
+    "fallback": "🗿",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "red_heart": {
+    "id": "6129562112629938847",
+    "fallback": "❤️",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "lightning": {
+    "id": "6129695952400820630",
+    "fallback": "⚡",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "robot": {
+    "id": "6129873536413605540",
+    "fallback": "🤖",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "blue_circle": {
+    "id": "6129651868856491132",
+    "fallback": "🔵",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "cool": {
+    "id": "6132198982031513203",
+    "fallback": "😎",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "star16": {
+    "id": "6129663516807796597",
+    "fallback": "🌟",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "fast_forward": {
+    "id": "6129802875611651951",
+    "fallback": "⏩",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "fire2": {
+    "id": "6129897266107915247",
+    "fallback": "🔥",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "two": {
+    "id": "6129426142555282578",
+    "fallback": "2️⃣",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "one": {
+    "id": "6129873970205302255",
+    "fallback": "1️⃣",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "wine": {
+    "id": "6129527246085429728",
+    "fallback": "🍷",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "wifi": {
+    "id": "6129934104042412999",
+    "fallback": "🛜",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "cool2": {
+    "id": "6131893910504480009",
+    "fallback": "😎",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "party2": {
+    "id": "6129758753412619088",
+    "fallback": "🥳",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "moai3": {
+    "id": "6132118786402163360",
+    "fallback": "🗿",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "fire3": {
+    "id": "6129418815341077483",
+    "fallback": "🔥",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "slight_smile2": {
+    "id": "6129911435205024348",
+    "fallback": "🙂",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "squint": {
+    "id": "6129794302856927889",
+    "fallback": "😝",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "thumbs4": {
+    "id": "6129926467590560665",
+    "fallback": "👍",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "slight_smile3": {
+    "id": "6129786503196319136",
+    "fallback": "🙂",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "open_mouth": {
+    "id": "6129795982189141421",
+    "fallback": "😮",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "lol": {
+    "id": "6136389070521114052",
+    "fallback": "🤣",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "three": {
+    "id": "6136461792907370226",
+    "fallback": "3️⃣",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "grin": {
+    "id": "6138557745537751767",
+    "fallback": "😀",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "grin2": {
+    "id": "6136269971077995421",
+    "fallback": "😀",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "grin3": {
+    "id": "6138763921147829284",
+    "fallback": "😀",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "grin4": {
+    "id": "6136565769770637814",
+    "fallback": "😀",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "grin5": {
+    "id": "6138443507997612595",
+    "fallback": "😀",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "red_heart2": {
+    "id": "6138957710072223834",
+    "fallback": "❤️",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "sparkling_heart": {
+    "id": "6136406830210882173",
+    "fallback": "💖",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "crying_cat": {
+    "id": "6136308217761766184",
+    "fallback": "😿",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "smile4": {
+    "id": "6138514890354071735",
+    "fallback": "😊",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "skull5": {
+    "id": "6138465562654678199",
+    "fallback": "💀",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "fast_forward2": {
+    "id": "6136514547990666308",
+    "fallback": "⏩",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "heart_arrow2": {
+    "id": "6154335299309672955",
+    "fallback": "💘",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "gift11": {
+    "id": "6156880045957716584",
+    "fallback": "🎁",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "arrow_right": {
+    "id": "6154421933095000846",
+    "fallback": "➡️",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "sad": {
+    "id": "6156827067536120729",
+    "fallback": "😞",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "arrow_right2": {
+    "id": "6156945144777022169",
+    "fallback": "➡️",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "skull6": {
+    "id": "6156936361568901831",
+    "fallback": "💀",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "star17": {
+    "id": "6156541396376361727",
+    "fallback": "🌟",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "hundred": {
+    "id": "6154257607646255757",
+    "fallback": "💯",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "check5": {
+    "id": "6156558816763714393",
+    "fallback": "✅",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "duck": {
+    "id": "6156434919842127016",
+    "fallback": "🦆",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "grin6": {
+    "id": "6154621704908839853",
+    "fallback": "😃",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "trophy": {
+    "id": "6156436440260549720",
+    "fallback": "🏆",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "calendar3": {
+    "id": "6154177180088670691",
+    "fallback": "🗓",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "heart_eyes": {
+    "id": "6156599245290872488",
+    "fallback": "😍",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "pushpin": {
+    "id": "6154294879372450069",
+    "fallback": "📌",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "eye": {
+    "id": "6154239663272893260",
+    "fallback": "👁",
+    "added_by": "system",
+    "date": "2024-01-01"
+  },
+  "fallen_leaf": {
+    "id": "6120916334873153887",
+    "fallback": "🍂",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "baby_bottle": {
+    "id": "6122730271360946438",
+    "fallback": "🍼",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "tumbler_glass": {
+    "id": "6120464813551260125",
+    "fallback": "🥃",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cigarette": {
+    "id": "6120726896750629340",
+    "fallback": "🚬",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "sweat_smile": {
+    "id": "6120952356763865136",
+    "fallback": "😅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "white_check_mark": {
+    "id": "6120713655366455614",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "sunglasses": {
+    "id": "6120517031763644419",
+    "fallback": "😎",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "triangular_flag_on_post": {
+    "id": "6120763081850097645",
+    "fallback": "🚩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "crazy_face": {
+    "id": "6120845558107083001",
+    "fallback": "🤪",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "laughing": {
+    "id": "6120822472657867538",
+    "fallback": "😆",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "rolling_on_the_floor_laughing": {
+    "id": "6120712353991364637",
+    "fallback": "🤣",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "ogre": {
+    "id": "6120512303004651500",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "heavy_check_mark": {
+    "id": "6120731908977462871",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "brain": {
+    "id": "6120687391641440754",
+    "fallback": "🧠",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "confused": {
+    "id": "6120840919542402970",
+    "fallback": "😕",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "peeking_eye": {
+    "id": "6120548797341765385",
+    "fallback": "🫣",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "disguised_face": {
+    "id": "6120403485713240823",
+    "fallback": "🥸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "smiling_imp": {
+    "id": "6120678840361554383",
+    "fallback": "😈",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "pink_heart": {
+    "id": "6123125485661591081",
+    "fallback": "🩷",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "pistol": {
+    "id": "6120482173809070536",
+    "fallback": "🔫",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "radio_button": {
+    "id": "6120884397496340521",
+    "fallback": "🎚",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "airplane": {
+    "id": "6120795006342009113",
+    "fallback": "✈️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cloud_with_lightning": {
+    "id": "6122784297754562671",
+    "fallback": "⛈",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "green_heart": {
+    "id": "6120417023450156605",
+    "fallback": "💚",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wrapped_gift": {
+    "id": "6120627219149625804",
+    "fallback": "🎁",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "arrow_left": {
+    "id": "6123107313654960925",
+    "fallback": "⬅️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "moneybag": {
+    "id": "6123044667261981438",
+    "fallback": "💰",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "abc": {
+    "id": "6120780841539867066",
+    "fallback": "🔤",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz1": {
+    "id": "6120916334873153887",
+    "fallback": "🍂",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz2": {
+    "id": "6122730271360946438",
+    "fallback": "🍼",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz3": {
+    "id": "6120464813551260125",
+    "fallback": "🥃",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz4": {
+    "id": "6120726896750629340",
+    "fallback": "🚬",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz5": {
+    "id": "6122831989071417375",
+    "fallback": "💖",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz6": {
+    "id": "6120822133355450056",
+    "fallback": "🔥",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz7": {
+    "id": "6122780647032360861",
+    "fallback": "😂",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz8": {
+    "id": "6120774798520881097",
+    "fallback": "😒",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz9": {
+    "id": "6120952356763865136",
+    "fallback": "😅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz10": {
+    "id": "6120839343289405725",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz11": {
+    "id": "6122880182899445829",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz12": {
+    "id": "6120713655366455614",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz13": {
+    "id": "6120517031763644419",
+    "fallback": "😎",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz14": {
+    "id": "6120473214507290876",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz15": {
+    "id": "6120763081850097645",
+    "fallback": "🚩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz16": {
+    "id": "6120883465488436848",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz17": {
+    "id": "6120639807698767375",
+    "fallback": "❤️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz18": {
+    "id": "6120845558107083001",
+    "fallback": "🤪",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz19": {
+    "id": "6120822472657867538",
+    "fallback": "😆",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz20": {
+    "id": "6120944350944825397",
+    "fallback": "🤪",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz21": {
+    "id": "6120712353991364637",
+    "fallback": "🤣",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz22": {
+    "id": "6120512303004651500",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz23": {
+    "id": "6123114172717732706",
+    "fallback": "💀",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz24": {
+    "id": "6122855615686512158",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz25": {
+    "id": "6120912366323372060",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz26": {
+    "id": "6120439786776826138",
+    "fallback": "🚩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz27": {
+    "id": "6120731908977462871",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz28": {
+    "id": "6120687391641440754",
+    "fallback": "🧠",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz29": {
+    "id": "6120652327528435580",
+    "fallback": "☠️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz30": {
+    "id": "6122735807573789902",
+    "fallback": "💀",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz31": {
+    "id": "6120840919542402970",
+    "fallback": "😕",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz32": {
+    "id": "6120548797341765385",
+    "fallback": "🫣",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz33": {
+    "id": "6120403485713240823",
+    "fallback": "🥸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz34": {
+    "id": "6120925899765322122",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz35": {
+    "id": "6120509356657086906",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz36": {
+    "id": "6120501660075691815",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz37": {
+    "id": "6120749857645793204",
+    "fallback": "🚩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz38": {
+    "id": "6120472411348406462",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz39": {
+    "id": "6120558272039620624",
+    "fallback": "❤️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz40": {
+    "id": "6123169616450555342",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz41": {
+    "id": "6122713512398557239",
+    "fallback": "😭",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz42": {
+    "id": "6122648774356504384",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz43": {
+    "id": "6120674060062953151",
+    "fallback": "☠️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz44": {
+    "id": "6120678840361554383",
+    "fallback": "😈",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz45": {
+    "id": "6120464942400278270",
+    "fallback": "😭",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz46": {
+    "id": "6120817765373711398",
+    "fallback": "😂",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz47": {
+    "id": "6123125485661591081",
+    "fallback": "🩷",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz48": {
+    "id": "6120728717816762574",
+    "fallback": "😂",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz49": {
+    "id": "6120482173809070536",
+    "fallback": "🔫",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz50": {
+    "id": "6120851425032408864",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz51": {
+    "id": "6122817321758102038",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz52": {
+    "id": "6122738552057894402",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz53": {
+    "id": "6120928798868246569",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz54": {
+    "id": "6122989786169874866",
+    "fallback": "❤",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz55": {
+    "id": "6120949122653491340",
+    "fallback": "❤",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz56": {
+    "id": "6120451387483494938",
+    "fallback": "❤",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz57": {
+    "id": "6120630938591301542",
+    "fallback": "❤",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz58": {
+    "id": "6123006210124811878",
+    "fallback": "😈",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz59": {
+    "id": "6123181698193559460",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz60": {
+    "id": "6120897827859075223",
+    "fallback": "☠️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz61": {
+    "id": "6120725032734822715",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz62": {
+    "id": "6120884397496340521",
+    "fallback": "🎚",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz63": {
+    "id": "6122694275240038254",
+    "fallback": "🎚",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz64": {
+    "id": "6122690796316529045",
+    "fallback": "🎚",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz65": {
+    "id": "6120795006342009113",
+    "fallback": "✈️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz66": {
+    "id": "6120517190677433950",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz67": {
+    "id": "6120635817674149717",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz68": {
+    "id": "6120395449829429527",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz69": {
+    "id": "6120883504143142816",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz70": {
+    "id": "6123129707614441341",
+    "fallback": "⭐",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz71": {
+    "id": "6122784297754562671",
+    "fallback": "⛈",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz72": {
+    "id": "6120417023450156605",
+    "fallback": "💚",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz73": {
+    "id": "6120627219149625804",
+    "fallback": "🎁",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz74": {
+    "id": "6122878812804878384",
+    "fallback": "➡️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz75": {
+    "id": "6120470070591230163",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz76": {
+    "id": "6123107313654960925",
+    "fallback": "⬅️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz77": {
+    "id": "6123044667261981438",
+    "fallback": "💰",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz78": {
+    "id": "6120520167089771101",
+    "fallback": "💰",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz79": {
+    "id": "6122834364188331733",
+    "fallback": "🔥",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz80": {
+    "id": "6123067735531327869",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz81": {
+    "id": "6120780841539867066",
+    "fallback": "🔤",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz82": {
+    "id": "6120470744901095358",
+    "fallback": "🔤",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz83": {
+    "id": "6120713986078937328",
+    "fallback": "⚡️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz84": {
+    "id": "6120593473591579890",
+    "fallback": "🔤",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz85": {
+    "id": "6120944741786849108",
+    "fallback": "🔤",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz86": {
+    "id": "6122954056336936844",
+    "fallback": "👀",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz87": {
+    "id": "6120508248555523762",
+    "fallback": "🔤",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz88": {
+    "id": "6122685182794272972",
+    "fallback": "🔡",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz89": {
+    "id": "6120550008522543158",
+    "fallback": "🔡",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz90": {
+    "id": "6120918546781311412",
+    "fallback": "🔡",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz91": {
+    "id": "6120695234251722613",
+    "fallback": "😈",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz92": {
+    "id": "6122918253489558245",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz93": {
+    "id": "6120840717678939704",
+    "fallback": "🥰",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz94": {
+    "id": "6120742083754988398",
+    "fallback": "💥",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz95": {
+    "id": "6120475722768191769",
+    "fallback": "😡",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz96": {
+    "id": "6120428873264926839",
+    "fallback": "☠",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz97": {
+    "id": "6120794284787502425",
+    "fallback": "🕊",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz98": {
+    "id": "6120694516992184854",
+    "fallback": "😭",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz99": {
+    "id": "6120705834231009305",
+    "fallback": "😂",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz100": {
+    "id": "6122699051243671018",
+    "fallback": "🥲",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz101": {
+    "id": "6123011797877264217",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz102": {
+    "id": "6120951184237792839",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz103": {
+    "id": "6120393512799178325",
+    "fallback": "➡️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz104": {
+    "id": "6122849095926157453",
+    "fallback": "🐈‍⬛",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz105": {
+    "id": "6120953460570460166",
+    "fallback": "🥰",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz106": {
+    "id": "6123205406413033871",
+    "fallback": "😔",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz107": {
+    "id": "6120511091823874486",
+    "fallback": "😱",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz108": {
+    "id": "6122949727009902469",
+    "fallback": "😉",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz109": {
+    "id": "6120915480174661950",
+    "fallback": "👺",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz110": {
+    "id": "6120648298849112199",
+    "fallback": "😒",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz111": {
+    "id": "6120526072669803034",
+    "fallback": "❌",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz112": {
+    "id": "6120946172010959542",
+    "fallback": "✅",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz113": {
+    "id": "6120723026985096171",
+    "fallback": "👑",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz114": {
+    "id": "6120738394378080432",
+    "fallback": "🚩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz115": {
+    "id": "6122960644816768987",
+    "fallback": "🚩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz116": {
+    "id": "6120452388210872071",
+    "fallback": "🚩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz117": {
+    "id": "6123184605886419004",
+    "fallback": "🚩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz118": {
+    "id": "6122894669824135013",
+    "fallback": "👍",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz119": {
+    "id": "6120822056046038707",
+    "fallback": "😂",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz120": {
+    "id": "6120420098646741263",
+    "fallback": "💊",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz121": {
+    "id": "6122706550256570631",
+    "fallback": "🤟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz122": {
+    "id": "6122924760365010848",
+    "fallback": "😴",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz123": {
+    "id": "6120901177933566143",
+    "fallback": "😎",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz124": {
+    "id": "6120946275090173852",
+    "fallback": "😂",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz125": {
+    "id": "6120428916214600679",
+    "fallback": "🤯",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz126": {
+    "id": "6120953838527582277",
+    "fallback": "😄",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz127": {
+    "id": "6120459079769919827",
+    "fallback": "👻",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz128": {
+    "id": "6120457606596138064",
+    "fallback": "😩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz129": {
+    "id": "6120915256836362193",
+    "fallback": "😐",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz130": {
+    "id": "6122821423451869694",
+    "fallback": "🧐",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz131": {
+    "id": "6120844364106174811",
+    "fallback": "🥲",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz132": {
+    "id": "6120427301306896787",
+    "fallback": "🤔",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz133": {
+    "id": "6120414115757297228",
+    "fallback": "😎",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz134": {
+    "id": "6123069097035959979",
+    "fallback": "🌚",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz135": {
+    "id": "6122794249193787744",
+    "fallback": "🙏",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz136": {
+    "id": "6120804734442934755",
+    "fallback": "🤔",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz137": {
+    "id": "6120632197016718959",
+    "fallback": "👍",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz138": {
+    "id": "6122706614681079099",
+    "fallback": "📱",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz139": {
+    "id": "6120779681898697029",
+    "fallback": "📱",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz140": {
+    "id": "6122874320269086482",
+    "fallback": "📱",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz141": {
+    "id": "6122883069117469256",
+    "fallback": "📱",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz142": {
+    "id": "6120770009632346330",
+    "fallback": "💔",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz143": {
+    "id": "6120586382600572861",
+    "fallback": "😃",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz144": {
+    "id": "6123154893302664652",
+    "fallback": "🤪",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz145": {
+    "id": "6120631041670516801",
+    "fallback": "🥺",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz146": {
+    "id": "6123077085675130174",
+    "fallback": "🙁",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz147": {
+    "id": "6120605924701770839",
+    "fallback": "❤️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz148": {
+    "id": "6120643531435412941",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz149": {
+    "id": "6122760486455874216",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz150": {
+    "id": "6120766436219555441",
+    "fallback": "👑",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz151": {
+    "id": "6120900718372066162",
+    "fallback": "😐",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz152": {
+    "id": "6120938741717536591",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz153": {
+    "id": "6120624852622642650",
+    "fallback": "😠",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz154": {
+    "id": "6122922441082670920",
+    "fallback": "😎",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz155": {
+    "id": "6120488886842953185",
+    "fallback": "🚩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz156": {
+    "id": "6120950917949820631",
+    "fallback": "🔸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz157": {
+    "id": "6120653847946858913",
+    "fallback": "🔹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz158": {
+    "id": "6120575357419524440",
+    "fallback": "⬇️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz159": {
+    "id": "6120448793323245649",
+    "fallback": "🚩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz160": {
+    "id": "6120576998097031526",
+    "fallback": "✌️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz161": {
+    "id": "6123030506754805624",
+    "fallback": "😡",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz162": {
+    "id": "6120706182123360381",
+    "fallback": "😒",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz163": {
+    "id": "6120458083337507014",
+    "fallback": "🤣",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz164": {
+    "id": "6120432682900918474",
+    "fallback": "🙏",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz165": {
+    "id": "6120582714698501762",
+    "fallback": "🤬",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz166": {
+    "id": "6120922936237887899",
+    "fallback": "🏏",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz167": {
+    "id": "6120929958509416013",
+    "fallback": "👍",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz168": {
+    "id": "6120878569225719661",
+    "fallback": "🖐",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz169": {
+    "id": "6122759597397643017",
+    "fallback": "🤔",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz170": {
+    "id": "6120564207684424205",
+    "fallback": "😜",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz171": {
+    "id": "6120886321641689477",
+    "fallback": "👀",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz172": {
+    "id": "6123106815438754604",
+    "fallback": "😂",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz173": {
+    "id": "6120823267226817240",
+    "fallback": "🥵",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz174": {
+    "id": "6120603906067141425",
+    "fallback": "😭",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz175": {
+    "id": "6120947619414937745",
+    "fallback": "😎",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz176": {
+    "id": "6122742804075515400",
+    "fallback": "🤬",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz177": {
+    "id": "6120660174433685452",
+    "fallback": "🏵",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz178": {
+    "id": "6123099024368078792",
+    "fallback": "❤️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz179": {
+    "id": "6120806499674492772",
+    "fallback": "😈",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz180": {
+    "id": "6120454819162361809",
+    "fallback": "❤",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz181": {
+    "id": "6120783147937304182",
+    "fallback": "😁",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz182": {
+    "id": "6122772353450513089",
+    "fallback": "🚩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz183": {
+    "id": "6123195798571192930",
+    "fallback": "❔",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz184": {
+    "id": "6120721519451574392",
+    "fallback": "♾",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz185": {
+    "id": "6120410409200521433",
+    "fallback": "👍",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz186": {
+    "id": "6120680030067495201",
+    "fallback": "🚬",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz187": {
+    "id": "6122785564769915622",
+    "fallback": "👍",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz188": {
+    "id": "6122809951594222130",
+    "fallback": "❤️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz189": {
+    "id": "6120941035230072875",
+    "fallback": "🎂",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz190": {
+    "id": "6120503378062610525",
+    "fallback": "🤣",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz191": {
+    "id": "6122950087787155667",
+    "fallback": "😭",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz192": {
+    "id": "6122681197064623018",
+    "fallback": "🗿",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz193": {
+    "id": "6122857771760094969",
+    "fallback": "💎",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz194": {
+    "id": "6120407325414003282",
+    "fallback": "💙",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz195": {
+    "id": "6120507913548075254",
+    "fallback": "☠",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz196": {
+    "id": "6123040393769521180",
+    "fallback": "☄️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz197": {
+    "id": "6120660741369369103",
+    "fallback": "❌",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz198": {
+    "id": "6122854391620832944",
+    "fallback": "🤝",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz199": {
+    "id": "6122648555313171965",
+    "fallback": "😁",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wiz200": {
+    "id": "6120625823285251747",
+    "fallback": "➕",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "iraq": {
+    "id": "5228888890630224685",
+    "fallback": "🇮🇶",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "egypt": {
+    "id": "5228743673490977536",
+    "fallback": "🇪🇬",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "yemen": {
+    "id": "5226859608777176325",
+    "fallback": "🇾🇪",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "saudi": {
+    "id": "5228974459263662399",
+    "fallback": "🇸🇦",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "bahrain": {
+    "id": "5229100967525364396",
+    "fallback": "🇧🇭",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "kuwait": {
+    "id": "5229020673111766281",
+    "fallback": "🇰🇼",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "qatar": {
+    "id": "5228680936903683914",
+    "fallback": "🇶🇦",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "uae": {
+    "id": "5228762867699823043",
+    "fallback": "🇦🇪",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "oman": {
+    "id": "5226574680646758397",
+    "fallback": "🇴🇲",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "sudan": {
+    "id": "5226543795536932969",
+    "fallback": "🇸🇩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "tunisia": {
+    "id": "5228714587972449908",
+    "fallback": "🇹🇳",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "palestine": {
+    "id": "5228730513711182082",
+    "fallback": "🇵🇸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "jordan": {
+    "id": "5228919964718610547",
+    "fallback": "🇯🇴",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "lebanon": {
+    "id": "5228681512429301372",
+    "fallback": "🇱🇧",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "algeria": {
+    "id": "5228772080404673713",
+    "fallback": "🇩🇿",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "morocco": {
+    "id": "5228937174652564368",
+    "fallback": "🇲🇦",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "somalia": {
+    "id": "5228694886957462275",
+    "fallback": "🇸🇴",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "djibouti": {
+    "id": "5228769451884687660",
+    "fallback": "🇩🇯",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "comoros": {
+    "id": "5228761604979437519",
+    "fallback": "🇰🇲",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "libya": {
+    "id": "5228706126886876021",
+    "fallback": "🇱🇾",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "usa": {
+    "id": "5228866831678191568",
+    "fallback": "🇺🇸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "ukraine": {
+    "id": "5228979978296637145",
+    "fallback": "🇺🇦",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "poland": {
+    "id": "5228849784952994382",
+    "fallback": "🇵🇱",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "kazakhstan": {
+    "id": "5229225186569497729",
+    "fallback": "🇰🇿",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "china": {
+    "id": "5231429728858024187",
+    "fallback": "🇨🇳",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "azerbaijan": {
+    "id": "5228904988167647199",
+    "fallback": "🇦🇿",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "europe": {
+    "id": "5231239461806812430",
+    "fallback": "🇪🇺",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "armenia": {
+    "id": "5230937478361263474",
+    "fallback": "🇦🇲",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "russia": {
+    "id": "5228853994020941586",
+    "fallback": "🇷🇺",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "uzbekistan": {
+    "id": "5228887709514217105",
+    "fallback": "🇺🇿",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "germany": {
+    "id": "5228737776500879312",
+    "fallback": "🇩🇪",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "japan": {
+    "id": "5229171752881369793",
+    "fallback": "🇯🇵",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "turkey": {
+    "id": "5228925659845242197",
+    "fallback": "🇹🇷",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "belarus": {
+    "id": "5228928172401112019",
+    "fallback": "🇧🇾",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "uk": {
+    "id": "5231464655532075871",
+    "fallback": "🇬🇧",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "brazil": {
+    "id": "5228878788867142213",
+    "fallback": "🇧🇷",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "zambia": {
+    "id": "5229048319816251538",
+    "fallback": "🇿🇲",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flag_black": {
+    "id": "5228817482503959936",
+    "fallback": "🏴",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "virgin_islands": {
+    "id": "5229100121416807702",
+    "fallback": "🇻🇮",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "vietnam": {
+    "id": "5229232930395534095",
+    "fallback": "🇻🇳",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "vatican": {
+    "id": "5228928232530653278",
+    "fallback": "🇻🇦",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "vanuatu": {
+    "id": "5228987674878029306",
+    "fallback": "🇻🇺",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "uruguay": {
+    "id": "5228728864443740854",
+    "fallback": "🇺🇾",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "usa2": {
+    "id": "5228691717271598099",
+    "fallback": "🇺🇸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "uganda": {
+    "id": "5231181144740866387",
+    "fallback": "🇺🇬",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "turkmenistan": {
+    "id": "5228817881935916690",
+    "fallback": "🇹🇲",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "trinidad": {
+    "id": "5231317866434800360",
+    "fallback": "🇹🇹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "togo": {
+    "id": "5228884771756585415",
+    "fallback": "🇹🇬",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "thailand": {
+    "id": "5231300746695157586",
+    "fallback": "🇹🇭",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "tanzania": {
+    "id": "5231232671463516463",
+    "fallback": "🇹🇿",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "tajikistan": {
+    "id": "5228880468199355032",
+    "fallback": "🇹🇯",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "switzerland": {
+    "id": "5228684566151050368",
+    "fallback": "🇨🇭",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "sweden": {
+    "id": "5229100130006740930",
+    "fallback": "🇸🇪",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "eswatini": {
+    "id": "5229172766493653208",
+    "fallback": "🇸🇿",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "suriname": {
+    "id": "5231010381136144017",
+    "fallback": "🇸🇷",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "spain": {
+    "id": "5228834752567455425",
+    "fallback": "🇪🇸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "sri_lanka": {
+    "id": "5228923267548464542",
+    "fallback": "🇱🇰",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "south_sudan": {
+    "id": "5229214337482108354",
+    "fallback": "🇸🇸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "korea": {
+    "id": "5231457079209767153",
+    "fallback": "🇰🇷",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "south_africa": {
+    "id": "5228892287949352739",
+    "fallback": "🇿🇦",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "solomon": {
+    "id": "5228784016118788122",
+    "fallback": "🇸🇧",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "slovenia": {
+    "id": "5228861312645215838",
+    "fallback": "🇸🇮",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "slovakia": {
+    "id": "5228884728806912844",
+    "fallback": "🇸🇰",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "singapore": {
+    "id": "5229085479873295688",
+    "fallback": "🇸🇬",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "sierra_leone": {
+    "id": "5228876074447812641",
+    "fallback": "🇸🇱",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "seychelles": {
+    "id": "5228912959626949306",
+    "fallback": "🇸🇨",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "serbia": {
+    "id": "5229048710658273675",
+    "fallback": "🇷🇸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "senegal": {
+    "id": "5229140180576776304",
+    "fallback": "🇸🇳",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flag_black2": {
+    "id": "5231006232197736057",
+    "fallback": "🏴",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "sao_tome": {
+    "id": "5231187840594881102",
+    "fallback": "🇸🇹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "san_marino": {
+    "id": "5229079767566791915",
+    "fallback": "🇸🇲",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "samoa": {
+    "id": "5229074171224404272",
+    "fallback": "🇼🇸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "st_kitts": {
+    "id": "5231049843295660172",
+    "fallback": "🇰🇳",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "st_vincent": {
+    "id": "5228865135166107104",
+    "fallback": "🇻🇨",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "st_lucia": {
+    "id": "5228853972546105576",
+    "fallback": "🇱🇨",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "rwanda": {
+    "id": "5228744730052931055",
+    "fallback": "🇷🇼",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "romania": {
+    "id": "5231468692801334930",
+    "fallback": "🇷🇴",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "puerto_rico": {
+    "id": "5229104205930705221",
+    "fallback": "🇵🇷",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "philippines": {
+    "id": "5231361434583049965",
+    "fallback": "🇵🇭",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "portugal": {
+    "id": "5229181356428241900",
+    "fallback": "🇵🇹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "peru": {
+    "id": "5231420846865656899",
+    "fallback": "🇵🇪",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "paraguay": {
+    "id": "5228926445824259810",
+    "fallback": "🇵🇾",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "papua": {
+    "id": "5228881056609875737",
+    "fallback": "🇵🇬",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "panama": {
+    "id": "5229227454312230616",
+    "fallback": "🇵🇦",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "palau": {
+    "id": "5228711937977628429",
+    "fallback": "🇵🇼",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "pakistan": {
+    "id": "5231469328456495469",
+    "fallback": "🇵🇰",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "norway": {
+    "id": "5229187163224028235",
+    "fallback": "🇳🇴",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "nigeria": {
+    "id": "5228755931327639059",
+    "fallback": "🇳🇬",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "niger": {
+    "id": "5228713299482259925",
+    "fallback": "🇳🇪",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "new_zealand": {
+    "id": "5231490940731927146",
+    "fallback": "🇳🇿",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "netherlands": {
+    "id": "5228838214311097338",
+    "fallback": "🇳🇱",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "nepal": {
+    "id": "5230989619264236182",
+    "fallback": "🇳🇵",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "namibia": {
+    "id": "5231062595053562695",
+    "fallback": "🇳🇦",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "mozambique": {
+    "id": "5228959379633485761",
+    "fallback": "🇲🇿",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "montenegro": {
+    "id": "5231230871872220567",
+    "fallback": "🇲🇪",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "mexico": {
+    "id": "5228862687034750340",
+    "fallback": "🇲🇽",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "mongolia": {
+    "id": "5231288810981042853",
+    "fallback": "🇲🇳",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "monaco": {
+    "id": "5228878290650934974",
+    "fallback": "🇲🇨",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "moldova": {
+    "id": "5228702841236894620",
+    "fallback": "🇲🇩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n1": {
+    "id": "5229141559261281239",
+    "fallback": "🇫🇲",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n2": {
+    "id": "5228805525315005908",
+    "fallback": "🇲🇺",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n3": {
+    "id": "5231279452247305972",
+    "fallback": "🇲🇭",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n4": {
+    "id": "5228986068560261015",
+    "fallback": "🇲🇶",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n5": {
+    "id": "5228704271461002337",
+    "fallback": "🇧🇲",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n6": {
+    "id": "5228964615198617693",
+    "fallback": "🇲🇹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n7": {
+    "id": "5229042409941251958",
+    "fallback": "🇲🇱",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n8": {
+    "id": "5229120668540350174",
+    "fallback": "🇲🇻",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n9": {
+    "id": "5228758684401676409",
+    "fallback": "🇲🇾",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n10": {
+    "id": "5231052072383686909",
+    "fallback": "🇰🇪",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n11": {
+    "id": "5228732154388688877",
+    "fallback": "🇲🇬",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n12": {
+    "id": "5229010352305352120",
+    "fallback": "🇲🇰",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n13": {
+    "id": "5228946812559175182",
+    "fallback": "🇱🇺",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n14": {
+    "id": "5229080669509924110",
+    "fallback": "🇱🇹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n15": {
+    "id": "5228770920763501965",
+    "fallback": "🇱🇮",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n16": {
+    "id": "5229168063504462052",
+    "fallback": "🇱🇷",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n17": {
+    "id": "5228815317840442758",
+    "fallback": "🇱🇸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n18": {
+    "id": "5229066805355491979",
+    "fallback": "🇱🇻",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n19": {
+    "id": "5228868768708441713",
+    "fallback": "🇱🇦",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n20": {
+    "id": "5229221613156709778",
+    "fallback": "🇰🇬",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n21": {
+    "id": "5229066848305165116",
+    "fallback": "🇽🇰",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n22": {
+    "id": "5231084546631412002",
+    "fallback": "🇰🇮",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n23": {
+    "id": "5229144033162439175",
+    "fallback": "🇰🇪",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n24": {
+    "id": "5228774000255054521",
+    "fallback": "🇯🇲",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n25": {
+    "id": "5231479808176696297",
+    "fallback": "🇮🇪",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n26": {
+    "id": "5228904322447715587",
+    "fallback": "🇮🇹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n27": {
+    "id": "5228971663239950518",
+    "fallback": "🇮🇷",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n28": {
+    "id": "5230966422145868849",
+    "fallback": "🇮🇸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n29": {
+    "id": "5231311634437253895",
+    "fallback": "🇭🇺",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n30": {
+    "id": "5231436420417071282",
+    "fallback": "🇭🇳",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n31": {
+    "id": "5228826897072270786",
+    "fallback": "🇭🇹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n32": {
+    "id": "5228877801024664978",
+    "fallback": "🇭🇳",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n33": {
+    "id": "5229141683815330450",
+    "fallback": "🇬🇾",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n34": {
+    "id": "5229076073894916970",
+    "fallback": "🇬🇼",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n35": {
+    "id": "5228698941406589887",
+    "fallback": "🇬🇳",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n36": {
+    "id": "5230993806857350172",
+    "fallback": "🇬🇹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n37": {
+    "id": "5229080433286721064",
+    "fallback": "🇬🇩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n38": {
+    "id": "5231177378054548068",
+    "fallback": "🇬🇷",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n39": {
+    "id": "5229191724479297642",
+    "fallback": "🇬🇭",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n40": {
+    "id": "5231390756324780410",
+    "fallback": "🇬🇪",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n41": {
+    "id": "5228990389297361190",
+    "fallback": "🇬🇲",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n42": {
+    "id": "5229004141782643279",
+    "fallback": "🇬🇦",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n43": {
+    "id": "5228876559779116073",
+    "fallback": "🇫🇷",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n44": {
+    "id": "5231468533887543085",
+    "fallback": "🇫🇮",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n45": {
+    "id": "5231290400118943409",
+    "fallback": "🇫🇯",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n46": {
+    "id": "5229015300107679794",
+    "fallback": "🇪🇹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n47": {
+    "id": "5231297340786092297",
+    "fallback": "🇪🇪",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n48": {
+    "id": "5229014445409188749",
+    "fallback": "🇬🇶",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n49": {
+    "id": "5228901590848517365",
+    "fallback": "🏴",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n50": {
+    "id": "5228804335609068070",
+    "fallback": "🇭🇳",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n51": {
+    "id": "5229076975838050121",
+    "fallback": "🇪🇨",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n52": {
+    "id": "5229160912383915045",
+    "fallback": "🇹🇱",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n53": {
+    "id": "5231282626228136573",
+    "fallback": "🇩🇴",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n54": {
+    "id": "5228859349845158981",
+    "fallback": "🇩🇲",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n55": {
+    "id": "5228738626904401832",
+    "fallback": "🇩🇰",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n56": {
+    "id": "5229040228097866075",
+    "fallback": "🇨🇾",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n57": {
+    "id": "5228821296434916547",
+    "fallback": "🇭🇷",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n58": {
+    "id": "5229041696976679959",
+    "fallback": "🇨🇷",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n59": {
+    "id": "5229107933962317896",
+    "fallback": "🇨🇬",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n60": {
+    "id": "5228878290650934976",
+    "fallback": "🇨🇩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n61": {
+    "id": "5230967568902138038",
+    "fallback": "🇨🇴",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n62": {
+    "id": "5229159748447778431",
+    "fallback": "🇨🇱",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n63": {
+    "id": "5228873845359783565",
+    "fallback": "🇨🇿",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n64": {
+    "id": "5228766600026402455",
+    "fallback": "🇹🇩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n65": {
+    "id": "5229144810551521958",
+    "fallback": "🇨🇫",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n66": {
+    "id": "5228766196299477662",
+    "fallback": "🇨🇻",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n67": {
+    "id": "5228854045560549475",
+    "fallback": "🇨🇦",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n68": {
+    "id": "5228682573286225596",
+    "fallback": "🇨🇲",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n69": {
+    "id": "5228873110920377825",
+    "fallback": "🇰🇭",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n70": {
+    "id": "5231382192159992336",
+    "fallback": "🇧🇮",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n71": {
+    "id": "5230983069439110063",
+    "fallback": "🇧🇫",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n72": {
+    "id": "5228835658805554966",
+    "fallback": "🇧🇬",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n73": {
+    "id": "5228860238903392552",
+    "fallback": "🇧🇳",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n74": {
+    "id": "5229085746161268975",
+    "fallback": "🇧🇼",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n75": {
+    "id": "5229024199279917736",
+    "fallback": "🇧🇦",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n76": {
+    "id": "5228831518457081177",
+    "fallback": "🇧🇴",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n77": {
+    "id": "5229036616030367192",
+    "fallback": "🇧🇹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n78": {
+    "id": "5230962878797851877",
+    "fallback": "🇧🇯",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n79": {
+    "id": "5228892837705167049",
+    "fallback": "🇧🇿",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n80": {
+    "id": "5231302065250118994",
+    "fallback": "🇧🇪",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n81": {
+    "id": "5230985547635239009",
+    "fallback": "🇧🇧",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n82": {
+    "id": "5229234880310686265",
+    "fallback": "🇧🇩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n83": {
+    "id": "5228682654890606318",
+    "fallback": "🇧🇸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n84": {
+    "id": "5231269689786642203",
+    "fallback": "🇦🇹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n85": {
+    "id": "5229131002231665950",
+    "fallback": "🇦🇷",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n86": {
+    "id": "5228897330240960711",
+    "fallback": "🇦🇺",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n87": {
+    "id": "5228846847195361643",
+    "fallback": "🇦🇬",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n88": {
+    "id": "5228958112618130892",
+    "fallback": "🇦🇴",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n89": {
+    "id": "5228868309146939365",
+    "fallback": "🇦🇩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n90": {
+    "id": "5229225444267536571",
+    "fallback": "🇦🇱",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n91": {
+    "id": "5228777015322094944",
+    "fallback": "🇿🇼",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "n92": {
+    "id": "5229196174065415940",
+    "fallback": "🇦🇫",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "starstruck_1": {
+    "id": "6084695058894819673",
+    "fallback": "🤩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "money_2": {
+    "id": "6086730718774300509",
+    "fallback": "💸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "money_3": {
+    "id": "6086664791026307819",
+    "fallback": "💸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "crown_4": {
+    "id": "6089003761496232797",
+    "fallback": "👑",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "heartfire_5": {
+    "id": "6089028758205897441",
+    "fallback": "❤️‍🔥",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "spark_6": {
+    "id": "6086639764251873025",
+    "fallback": "💫",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "smile_7": {
+    "id": "6086690887247597839",
+    "fallback": "🙂",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "blush_8": {
+    "id": "6089118557382121313",
+    "fallback": "😊",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "dollar_9": {
+    "id": "6089140105233044310",
+    "fallback": "💲",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "check_10": {
+    "id": "6089364701957853465",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "warning_11": {
+    "id": "6089079808187174973",
+    "fallback": "⚠️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "top_12": {
+    "id": "6086784182527202100",
+    "fallback": "🔝",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "fire_13": {
+    "id": "6086954744268460848",
+    "fallback": "🔥",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "check_14": {
+    "id": "6087133294648890399",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "eight_15": {
+    "id": "6089206028686070348",
+    "fallback": "8️⃣",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_16": {
+    "id": "6086924086791902713",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "shield_17": {
+    "id": "6086672466132865380",
+    "fallback": "🛡",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "thumbs_18": {
+    "id": "6089313931149448495",
+    "fallback": "👍",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "check_19": {
+    "id": "6089196601232854885",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "no_20": {
+    "id": "6086741365998227951",
+    "fallback": "🚫",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "skull_21": {
+    "id": "6087162775304409688",
+    "fallback": "💀",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "moneybag_22": {
+    "id": "6089104607328342288",
+    "fallback": "💰",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "starstruck_23": {
+    "id": "6086730808968614780",
+    "fallback": "🤩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "apple_24": {
+    "id": "6086745394677551464",
+    "fallback": "🍏",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "love_25": {
+    "id": "6089423023318766264",
+    "fallback": "🥰",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "signal_29": {
+    "id": "6089079919856325971",
+    "fallback": "📶",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "phone_30": {
+    "id": "6087128656084210204",
+    "fallback": "📱",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_31": {
+    "id": "6089130055009571008",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_32": {
+    "id": "6087130726258446488",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_33": {
+    "id": "6086615841284035037",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_34": {
+    "id": "6086890285399282868",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_35": {
+    "id": "6086747705369957045",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_36": {
+    "id": "6088900055215902751",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_37": {
+    "id": "6086933162057798581",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_38": {
+    "id": "6086946867298439895",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_39": {
+    "id": "6089302652565328018",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_40": {
+    "id": "6087111093962937579",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_41": {
+    "id": "6089091696656650615",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "ogre_42": {
+    "id": "6086817820711064076",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "ogre_43": {
+    "id": "6089217174126203362",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "ogre_44": {
+    "id": "6089376431513539276",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "ogre_45": {
+    "id": "6087012932485386636",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "ogre_46": {
+    "id": "6086804742535647234",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_47": {
+    "id": "6089094625824346130",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "ogre_48": {
+    "id": "6089032941504041241",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "gem_49": {
+    "id": "6086778246882399112",
+    "fallback": "💎",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "ogre_50": {
+    "id": "6089331793918434895",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "ogre_51": {
+    "id": "6086715939791835654",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "ogre_52": {
+    "id": "6089218471206327014",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_53": {
+    "id": "6086909445248390037",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "ogre_54": {
+    "id": "6089415747644168497",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_55": {
+    "id": "6089415193593385928",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "ogre_56": {
+    "id": "6089211642208326407",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "ogre_57": {
+    "id": "6089111655369675615",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "ogre_59": {
+    "id": "6089273086010462949",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "ogre_61": {
+    "id": "6089205092383200572",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "ogre_63": {
+    "id": "6089124398537642497",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "lightning_64": {
+    "id": "6087079590377820415",
+    "fallback": "⚡",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wink_65": {
+    "id": "6089024570612781324",
+    "fallback": "😉",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "ogre_66": {
+    "id": "6086688769828721421",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "crown_67": {
+    "id": "6089349454823952869",
+    "fallback": "👑",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_68": {
+    "id": "6088901236331910211",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_69": {
+    "id": "6089016925570995663",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_70": {
+    "id": "6088964329401487918",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_71": {
+    "id": "6086784745167917713",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "star_72": {
+    "id": "6086816966012573204",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flag_74": {
+    "id": "6087060924449953862",
+    "fallback": "🚩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "crown_75": {
+    "id": "6089005604037203306",
+    "fallback": "👑",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "brokenheart_76": {
+    "id": "6088971480522035863",
+    "fallback": "💔",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "handshake_77": {
+    "id": "6086990448331592466",
+    "fallback": "🤝",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "handshake_78": {
+    "id": "6086928089701421862",
+    "fallback": "🤝",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "handshake_79": {
+    "id": "6086657790229614985",
+    "fallback": "🤝",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "handshake_80": {
+    "id": "6086668836885500499",
+    "fallback": "🤝",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "pin_81": {
+    "id": "6089019283508040459",
+    "fallback": "📌",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cool_123": {
+    "id": "6096056720566522801",
+    "fallback": "😎",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "heart_124": {
+    "id": "6095687735631155103",
+    "fallback": "❤",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "heart_125": {
+    "id": "6093706475807445989",
+    "fallback": "❤️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flower_126": {
+    "id": "6093584842333622858",
+    "fallback": "🏵",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flower_127": {
+    "id": "6093772622598771321",
+    "fallback": "🏵",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "think_128": {
+    "id": "6093666528316625608",
+    "fallback": "🤔",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "meh_129": {
+    "id": "6093576514392037256",
+    "fallback": "😒",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cool_130": {
+    "id": "6093715675627393878",
+    "fallback": "😎",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cool_131": {
+    "id": "6093399334106173535",
+    "fallback": "😎",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "laugh_132": {
+    "id": "6093661404420641058",
+    "fallback": "🤣",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wink_133": {
+    "id": "6096157154081771397",
+    "fallback": "😉",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cute_134": {
+    "id": "6093779241143374561",
+    "fallback": "🥺",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cute_135": {
+    "id": "6093434664507150188",
+    "fallback": "🥺",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "soft_136": {
+    "id": "6093701420630938474",
+    "fallback": "🥹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "hug_137": {
+    "id": "6095742874421301875",
+    "fallback": "🤗",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "heart_138": {
+    "id": "6093577759932552635",
+    "fallback": "❤️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "island_139": {
+    "id": "6093464720688288321",
+    "fallback": "🏝",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "work_140": {
+    "id": "6093612746736145083",
+    "fallback": "💼",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "steps_141": {
+    "id": "6093899809465307155",
+    "fallback": "👣",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "food_142": {
+    "id": "6093451264555750089",
+    "fallback": "🍴",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "stop_143": {
+    "id": "6093778090092139204",
+    "fallback": "⛔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "call_144": {
+    "id": "6093587384954262033",
+    "fallback": "📞",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "sleep_145": {
+    "id": "6095795620914664179",
+    "fallback": "💤",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "wave_146": {
+    "id": "6095851644468072524",
+    "fallback": "👋",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "plane_147": {
+    "id": "6093786581242482660",
+    "fallback": "✈️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "time_148": {
+    "id": "6093456762113888541",
+    "fallback": "🕓",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "skull_149": {
+    "id": "6096002964755847104",
+    "fallback": "💀",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "laugh_150": {
+    "id": "6093522689861882360",
+    "fallback": "😂",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "think_151": {
+    "id": "6093650241800638523",
+    "fallback": "🤔",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "doubt_152": {
+    "id": "6093493892106162082",
+    "fallback": "🤨",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "shock_153": {
+    "id": "6095888417978061469",
+    "fallback": "😧",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "smile_154": {
+    "id": "6093833452220585982",
+    "fallback": "😀",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "crazy_155": {
+    "id": "6096026428162183499",
+    "fallback": "🤪",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "starstruck_156": {
+    "id": "6093376261541859430",
+    "fallback": "🤩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "love_157": {
+    "id": "6093725459562893833",
+    "fallback": "😍",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cry_158": {
+    "id": "6093930033150170743",
+    "fallback": "😭",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "heart_159": {
+    "id": "6096153219891728680",
+    "fallback": "❤️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "smirk_160": {
+    "id": "6093748819890018226",
+    "fallback": "😏",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "smirk_161": {
+    "id": "6093869083269271739",
+    "fallback": "😏",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "starstruck_162": {
+    "id": "6111707285040403058",
+    "fallback": "🤩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "check_26": {
+    "id": "6089418114171147667",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "check_27": {
+    "id": "6086642762139047154",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "check_28": {
+    "id": "6086954160152908450",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "check_58": {
+    "id": "6087154735125630953",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "check_60": {
+    "id": "6086820878727778414",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "check_62": {
+    "id": "6088971806939550947",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "check_73": {
+    "id": "6086827754970419634",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_1": {
+    "id": "6084695058894819673",
+    "fallback": "🤩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_2": {
+    "id": "6086730718774300509",
+    "fallback": "💸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_3": {
+    "id": "6086664791026307819",
+    "fallback": "💸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_4": {
+    "id": "6089003761496232797",
+    "fallback": "👑",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_5": {
+    "id": "6089028758205897441",
+    "fallback": "❤️‍🔥",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_6": {
+    "id": "6086639764251873025",
+    "fallback": "💫",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_7": {
+    "id": "6086690887247597839",
+    "fallback": "🙂",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_8": {
+    "id": "6089118557382121313",
+    "fallback": "😊",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_9": {
+    "id": "6089140105233044310",
+    "fallback": "💲",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_10": {
+    "id": "6089364701957853465",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_11": {
+    "id": "6089079808187174973",
+    "fallback": "⚠️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_12": {
+    "id": "6086784182527202100",
+    "fallback": "🔝",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_13": {
+    "id": "6086954744268460848",
+    "fallback": "🔥",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_14": {
+    "id": "6087133294648890399",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_15": {
+    "id": "6089206028686070348",
+    "fallback": "8️⃣",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_16": {
+    "id": "6086924086791902713",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_17": {
+    "id": "6086672466132865380",
+    "fallback": "🛡",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_18": {
+    "id": "6089313931149448495",
+    "fallback": "👍",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_19": {
+    "id": "6089196601232854885",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_20": {
+    "id": "6086741365998227951",
+    "fallback": "🚫",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_21": {
+    "id": "6087162775304409688",
+    "fallback": "💀",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_22": {
+    "id": "6089104607328342288",
+    "fallback": "💰",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_23": {
+    "id": "6086730808968614780",
+    "fallback": "🤩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_24": {
+    "id": "6086745394677551464",
+    "fallback": "🍏",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_25": {
+    "id": "6089423023318766264",
+    "fallback": "🥰",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_26": {
+    "id": "6089418114171147667",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_27": {
+    "id": "6086642762139047154",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_28": {
+    "id": "6086954160152908450",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_29": {
+    "id": "6089079919856325971",
+    "fallback": "📶",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_30": {
+    "id": "6087128656084210204",
+    "fallback": "📱",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_31": {
+    "id": "6089130055009571008",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_32": {
+    "id": "6087130726258446488",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_33": {
+    "id": "6086615841284035037",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_34": {
+    "id": "6086890285399282868",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_35": {
+    "id": "6086747705369957045",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_36": {
+    "id": "6088900055215902751",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_37": {
+    "id": "6086933162057798581",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_38": {
+    "id": "6086946867298439895",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_39": {
+    "id": "6089302652565328018",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_40": {
+    "id": "6087111093962937579",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_41": {
+    "id": "6089091696656650615",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_42": {
+    "id": "6086817820711064076",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_43": {
+    "id": "6089217174126203362",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_44": {
+    "id": "6089376431513539276",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_45": {
+    "id": "6087012932485386636",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_46": {
+    "id": "6086804742535647234",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_47": {
+    "id": "6089094625824346130",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_48": {
+    "id": "6089032941504041241",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_49": {
+    "id": "6086778246882399112",
+    "fallback": "💎",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_50": {
+    "id": "6089331793918434895",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_51": {
+    "id": "6086715939791835654",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_52": {
+    "id": "6089218471206327014",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_53": {
+    "id": "6086909445248390037",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_54": {
+    "id": "6089415747644168497",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_55": {
+    "id": "6089415193593385928",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_56": {
+    "id": "6089211642208326407",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_57": {
+    "id": "6089111655369675615",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_58": {
+    "id": "6087154735125630953",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_59": {
+    "id": "6089273086010462949",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_60": {
+    "id": "6086820878727778414",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_61": {
+    "id": "6089205092383200572",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_62": {
+    "id": "6088971806939550947",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_63": {
+    "id": "6089124398537642497",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_64": {
+    "id": "6087079590377820415",
+    "fallback": "⚡",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_65": {
+    "id": "6089024570612781324",
+    "fallback": "😉",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_66": {
+    "id": "6086688769828721421",
+    "fallback": "👹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_67": {
+    "id": "6089349454823952869",
+    "fallback": "👑",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_68": {
+    "id": "6088901236331910211",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_69": {
+    "id": "6089016925570995663",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_70": {
+    "id": "6088964329401487918",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_71": {
+    "id": "6086784745167917713",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_72": {
+    "id": "6086816966012573204",
+    "fallback": "🌟",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_73": {
+    "id": "6086827754970419634",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_74": {
+    "id": "6087060924449953862",
+    "fallback": "🚩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_75": {
+    "id": "6089005604037203306",
+    "fallback": "👑",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_76": {
+    "id": "6088971480522035863",
+    "fallback": "💔",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_77": {
+    "id": "6086990448331592466",
+    "fallback": "🤝",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_78": {
+    "id": "6086928089701421862",
+    "fallback": "🤝",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_79": {
+    "id": "6086657790229614985",
+    "fallback": "🤝",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_80": {
+    "id": "6086668836885500499",
+    "fallback": "🤝",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_81": {
+    "id": "6089019283508040459",
+    "fallback": "📌",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_123": {
+    "id": "6096056720566522801",
+    "fallback": "😎",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_124": {
+    "id": "6095687735631155103",
+    "fallback": "❤",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_125": {
+    "id": "6093706475807445989",
+    "fallback": "❤️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_126": {
+    "id": "6093584842333622858",
+    "fallback": "🏵",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_127": {
+    "id": "6093772622598771321",
+    "fallback": "🏵",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_128": {
+    "id": "6093666528316625608",
+    "fallback": "🤔",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_129": {
+    "id": "6093576514392037256",
+    "fallback": "😒",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_130": {
+    "id": "6093715675627393878",
+    "fallback": "😎",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_131": {
+    "id": "6093399334106173535",
+    "fallback": "😎",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_132": {
+    "id": "6093661404420641058",
+    "fallback": "🤣",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_133": {
+    "id": "6096157154081771397",
+    "fallback": "😉",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_134": {
+    "id": "6093779241143374561",
+    "fallback": "🥺",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_135": {
+    "id": "6093434664507150188",
+    "fallback": "🥺",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_136": {
+    "id": "6093701420630938474",
+    "fallback": "🥹",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_137": {
+    "id": "6095742874421301875",
+    "fallback": "🤗",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_138": {
+    "id": "6093577759932552635",
+    "fallback": "❤️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_139": {
+    "id": "6093464720688288321",
+    "fallback": "🏝",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_140": {
+    "id": "6093612746736145083",
+    "fallback": "💼",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_141": {
+    "id": "6093899809465307155",
+    "fallback": "👣",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_142": {
+    "id": "6093451264555750089",
+    "fallback": "🍴",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_143": {
+    "id": "6093778090092139204",
+    "fallback": "⛔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_144": {
+    "id": "6093587384954262033",
+    "fallback": "📞",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_145": {
+    "id": "6095795620914664179",
+    "fallback": "💤",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_146": {
+    "id": "6095851644468072524",
+    "fallback": "👋",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_147": {
+    "id": "6093786581242482660",
+    "fallback": "✈️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_148": {
+    "id": "6093456762113888541",
+    "fallback": "🕓",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_149": {
+    "id": "6096002964755847104",
+    "fallback": "💀",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_150": {
+    "id": "6093522689861882360",
+    "fallback": "😂",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_151": {
+    "id": "6093650241800638523",
+    "fallback": "🤔",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_152": {
+    "id": "6093493892106162082",
+    "fallback": "🤨",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_153": {
+    "id": "6095888417978061469",
+    "fallback": "😧",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_154": {
+    "id": "6093833452220585982",
+    "fallback": "😀",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_155": {
+    "id": "6096026428162183499",
+    "fallback": "🤪",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_156": {
+    "id": "6093376261541859430",
+    "fallback": "🤩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_157": {
+    "id": "6093725459562893833",
+    "fallback": "😍",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_158": {
+    "id": "6093930033150170743",
+    "fallback": "😭",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_159": {
+    "id": "6096153219891728680",
+    "fallback": "❤️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "carding_160": {
+    "id": "6093748819890018226",
+    "fallback": "😏",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_1": {
+    "id": "5210956306952758910",
+    "fallback": "👀",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_2": {
+    "id": "5461117441612462242",
+    "fallback": "🙂",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_3": {
+    "id": "5456140674028019486",
+    "fallback": "⚡️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_4": {
+    "id": "5224607267797606837",
+    "fallback": "☄️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_5": {
+    "id": "5229064374403998351",
+    "fallback": "🛍",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_6": {
+    "id": "5260293700088511294",
+    "fallback": "⛔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_7": {
+    "id": "5240241223632954241",
+    "fallback": "🚫",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_8": {
+    "id": "5274099962655816924",
+    "fallback": "❗️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_9": {
+    "id": "5440660757194744323",
+    "fallback": "‼️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_10": {
+    "id": "5314504236132747481",
+    "fallback": "⁉️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_11": {
+    "id": "5436113877181941026",
+    "fallback": "❓",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_12": {
+    "id": "5447644880824181073",
+    "fallback": "⚠️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_13": {
+    "id": "5420323339723881652",
+    "fallback": "⚠️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_14": {
+    "id": "5447410659077661506",
+    "fallback": "🌐",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_15": {
+    "id": "5443038326535759644",
+    "fallback": "💬",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_16": {
+    "id": "5467538555158943525",
+    "fallback": "💭",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_17": {
+    "id": "5452069934089641166",
+    "fallback": "❓",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_18": {
+    "id": "5231200819986047254",
+    "fallback": "📊",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_19": {
+    "id": "5449683594425410231",
+    "fallback": "🔼",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_20": {
+    "id": "5447183459602669338",
+    "fallback": "🔽",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_21": {
+    "id": "5451882707875276247",
+    "fallback": "🕯",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_22": {
+    "id": "5244837092042750681",
+    "fallback": "📈",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_23": {
+    "id": "5246762912428603768",
+    "fallback": "📉",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_24": {
+    "id": "5206607081334906820",
+    "fallback": "✔️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_25": {
+    "id": "5210952531676504517",
+    "fallback": "❌",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_26": {
+    "id": "5222079954421818267",
+    "fallback": "🆒",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_27": {
+    "id": "5458603043203327669",
+    "fallback": "🔔",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_28": {
+    "id": "5391112412445288650",
+    "fallback": "🥸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_29": {
+    "id": "5269531045165816230",
+    "fallback": "🤡",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_30": {
+    "id": "5395444514028529554",
+    "fallback": "🫦",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_31": {
+    "id": "5397782960512444700",
+    "fallback": "📌",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_32": {
+    "id": "5409048419211682843",
+    "fallback": "💵",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_33": {
+    "id": "5233326571099534068",
+    "fallback": "💸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_34": {
+    "id": "5231449120635370684",
+    "fallback": "💸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_35": {
+    "id": "5278751923338490157",
+    "fallback": "💸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_36": {
+    "id": "5290017777174722330",
+    "fallback": "💸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_37": {
+    "id": "5231005931550030290",
+    "fallback": "💸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_38": {
+    "id": "5402186569006210455",
+    "fallback": "💱",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_39": {
+    "id": "5264919878082509254",
+    "fallback": "▶️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "flash_40": {
+    "id": "5411225014148014586",
+    "fallback": "🔴",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_41": {
+    "id": "5416081784641168838",
+    "fallback": "🟢",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_42": {
+    "id": "5416117059207572332",
+    "fallback": "➡️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_43": {
+    "id": "5424972470023104089",
+    "fallback": "🔥",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_44": {
+    "id": "5276032951342088188",
+    "fallback": "💥",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_45": {
+    "id": "5294339927318739359",
+    "fallback": "🎙",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_46": {
+    "id": "5224736245665511429",
+    "fallback": "🎤",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_47": {
+    "id": "5424818078833715060",
+    "fallback": "📣",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_48": {
+    "id": "5431609822288033666",
+    "fallback": "🤫",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_49": {
+    "id": "5449875686837726134",
+    "fallback": "👎",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_50": {
+    "id": "5460795800101594035",
+    "fallback": "🗣️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_51": {
+    "id": "5231012545799666522",
+    "fallback": "🔍",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_52": {
+    "id": "5251203410396458957",
+    "fallback": "🛡",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_53": {
+    "id": "5271604874419647061",
+    "fallback": "🔗",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_54": {
+    "id": "5282843764451195532",
+    "fallback": "🖥",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_55": {
+    "id": "5323442290708985472",
+    "fallback": "©",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_56": {
+    "id": "5334544901428229844",
+    "fallback": "ℹ️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_57": {
+    "id": "5337080053119336309",
+    "fallback": "👍",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_58": {
+    "id": "5348125953090403204",
+    "fallback": "▶️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_59": {
+    "id": "5359543311897998264",
+    "fallback": "⏸",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_60": {
+    "id": "5341498088408234504",
+    "fallback": "💯",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_61": {
+    "id": "5375338737028841420",
+    "fallback": "🔄",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_62": {
+    "id": "5415655814079723871",
+    "fallback": "🔝",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_63": {
+    "id": "5382357040008021292",
+    "fallback": "🆕",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_64": {
+    "id": "5440621591387980068",
+    "fallback": "🔜",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_65": {
+    "id": "5391032818111363540",
+    "fallback": "📍",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_66": {
+    "id": "5397916757333654639",
+    "fallback": "➕",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_67": {
+    "id": "5427168083074628963",
+    "fallback": "💎",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_68": {
+    "id": "5438496463044752972",
+    "fallback": "⭐️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_69": {
+    "id": "5325547803936572038",
+    "fallback": "✨",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_70": {
+    "id": "5217822164362739968",
+    "fallback": "👑",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_71": {
+    "id": "5445267414562389170",
+    "fallback": "🗑",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_72": {
+    "id": "5222444124698853913",
+    "fallback": "🔖",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_73": {
+    "id": "5253742260054409879",
+    "fallback": "✉️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_74": {
+    "id": "5296369303661067030",
+    "fallback": "🔒",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_75": {
+    "id": "5303479226882603449",
+    "fallback": "😮",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_76": {
+    "id": "5305265301917549162",
+    "fallback": "📎",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_77": {
+    "id": "5341715473882955310",
+    "fallback": "⚙️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_78": {
+    "id": "5361741454685256344",
+    "fallback": "🎮",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_79": {
+    "id": "5388632425314140043",
+    "fallback": "🔈",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_80": {
+    "id": "5386367538735104399",
+    "fallback": "⌛",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_81": {
+    "id": "5406745015365943482",
+    "fallback": "⬇️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_82": {
+    "id": "5402477260982731644",
+    "fallback": "☀️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_83": {
+    "id": "5399913388845322366",
+    "fallback": "🌧",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_84": {
+    "id": "5449569374065152798",
+    "fallback": "🌛",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_85": {
+    "id": "5449449325434266744",
+    "fallback": "❄️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_86": {
+    "id": "5409109841538994759",
+    "fallback": "🌈",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_87": {
+    "id": "5393512611968995988",
+    "fallback": "💧",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_88": {
+    "id": "5413879192267805083",
+    "fallback": "🗓",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_89": {
+    "id": "5422439311196834318",
+    "fallback": "💡",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_90": {
+    "id": "5440539497383087970",
+    "fallback": "🥇",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_91": {
+    "id": "5447203607294265305",
+    "fallback": "🥈",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_92": {
+    "id": "5453902265922376865",
+    "fallback": "🥉",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_93": {
+    "id": "5463107823946717464",
+    "fallback": "🎵",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_94": {
+    "id": "5406756500108501710",
+    "fallback": "🆓",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_95": {
+    "id": "5395444784611480792",
+    "fallback": "✏️",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_96": {
+    "id": "5395695537687123235",
+    "fallback": "🚨",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_97": {
+    "id": "5406683434124859552",
+    "fallback": "🛍",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_98": {
+    "id": "5416041192905265756",
+    "fallback": "🏠",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_99": {
+    "id": "5460755126761312667",
+    "fallback": "🚩",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  },
+  "cardx_100": {
+    "id": "5461151367559141950",
+    "fallback": "🎉",
+    "added_by": "𝐒𝐆 </> 𝗦𝗚𝗫𝗖𝗢𝗗𝗘𝗫",
+    "date": "2026-05-17"
+  }
+}
