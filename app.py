@@ -1,141 +1,141 @@
-# api/index.py (or app.py)
+import json
+import sys
+import base64
+from typing import Optional, Tuple
+
 import requests
-from flask import Flask, request, render_template_string
+from Crypto.Cipher import AES
+from Crypto.Util.Padding import pad
 
-app = Flask(__name__)
+# ---------- AES / encryption (from follow_cap.py) ----------
+_gAyKeY = bytes([89, 103, 38, 116, 99, 37, 68, 69, 117, 104, 54, 37, 90, 99, 94, 56])
+_gAyIv = bytes([54, 111, 121, 90, 68, 114, 50, 50, 69, 51, 121, 99, 104, 106, 77, 37])
 
-def convert(seconds):
-    """Convert seconds to human readable format"""
-    d, h = divmod(seconds, 86400)
-    h, m = divmod(h, 3600)
-    m, s = divmod(m, 60)
-    parts = []
-    if d > 0:
-        parts.append(f"{d} Day{'s' if d != 1 else ''}")
-    if h > 0:
-        parts.append(f"{h} Hour{'s' if h != 1 else ''}")
-    if m > 0:
-        parts.append(f"{m} Min{'s' if m != 1 else ''}")
-    if s > 0 or not parts:
-        parts.append(f"{s} Sec{'s' if s != 1 else ''}")
-    return " ".join(parts)
+def _sHuFfLeShIt(dAtA: bytes) -> bytes:
+    cIpHeR = AES.new(_gAyKeY, AES.MODE_CBC, _gAyIv)
+    return cIpHeR.encrypt(pad(dAtA, AES.block_size))
 
-def get_bind_info(access_token):
-    """Get bind information from Garena API"""
-    url = "https://100067.connect.garena.com/game/account_security/bind:get_bind_info"
-    payload = {'app_id': "100067", 'access_token': access_token}
-    headers = {
-        'User-Agent': "GarenaMSDK/4.0.19P9(Redmi Note 5 ;Android 9;en;US;)",
-        'Connection': "Keep-Alive",
-        'Accept-Encoding': "gzip"
+# ---------- JWT fetch ----------
+def _gEtMyJwT(uId: int, pAsSwOrD: str) -> Optional[str]:
+    pArAmS = {
+        "guest_uid": str(uId),
+        "guest_password": pAsSwOrD
     }
-    
     try:
-        response = requests.get(url, params=payload, headers=headers, timeout=30)
-        
-        if response.status_code == 200:
-            data = response.json()
-            email = data.get("email", "")
-            email_to_be = data.get("email_to_be", "")
-            countdown = data.get("request_exec_countdown", 0)
-            
-            result = {
-                "status": "success",
-                "current_email": email,
-                "pending_email": email_to_be,
-                "countdown_seconds": countdown,
-                "countdown_human": convert(countdown) if countdown > 0 else "0",
-                "raw_response": data
-            }
-            
-            if email == "" and email_to_be != "":
-                result["summary"] = f"Pending email confirmation: {email_to_be} - Confirms in: {convert(countdown)}"
-            elif email != "" and email_to_be == "":
-                result["summary"] = f"Email confirmed: {email}"
-            elif email == "" and email_to_be == "":
-                result["summary"] = "No recovery email set"
-            else:
-                result["summary"] = f"Current: {email} | Pending change: {email_to_be}"
-                
-            return result
-        else:
+        rEsP = requests.get("https://ff-jwt-gen-api.lovable.app/api/public/token",
+                            params=pArAmS, timeout=15)
+        rEsP.raise_for_status()
+        dAtA = rEsP.json()
+        if dAtA.get("success") and dAtA.get("token"):
+            return dAtA.get("token")
+        return None
+    except Exception:
+        return None
+
+# ---------- Fixed request data ----------
+REQUEST_HEX = "1A 72 5B 2C 56 EC 52 BA 7D 09 62 34 54 C0 A0 03"
+REQUEST_BYTES = bytes.fromhex(REQUEST_HEX.replace(" ", ""))
+
+URL = "https://client.ind.freefiremobile.com/GetFollowedCreatorStats"
+
+# ---------- Protobuf parser ----------
+def decode_varint(data: bytes, offset: int) -> Tuple[int, int]:
+    result = 0
+    shift = 0
+    while True:
+        if offset >= len(data):
+            raise ValueError("Unexpected end of data while reading varint")
+        byte = data[offset]
+        offset += 1
+        result |= (byte & 0x7F) << shift
+        if not (byte & 0x80):
+            break
+        shift += 7
+    return result, offset
+
+def count_repeated_field_1(data: bytes) -> int:
+    count = 0
+    offset = 0
+    while offset < len(data):
+        key, offset = decode_varint(data, offset)
+        num = key >> 3
+        wire = key & 0x07
+        if wire == 0:
+            _, offset = decode_varint(data, offset)
+        elif wire == 1:
+            offset += 8
+        elif wire == 2:
+            length, offset = decode_varint(data, offset)
+            offset += length
+            if num == 1:
+                count += 1
+        elif wire == 5:
+            offset += 4
+        # ignore groups
+    return count
+
+# ---------- Main handler ----------
+def handler(request):
+    """
+    Vercel serverless function entry point.
+    Expects query parameters: uid (int) and password (str)
+    """
+    # Get query parameters
+    uid_str = request.args.get("uid")
+    password = request.args.get("password")
+    if not uid_str or not password:
+        return {
+            "statusCode": 400,
+            "body": json.dumps({"error": "Missing uid or password"})
+        }
+    try:
+        uid = int(uid_str)
+    except ValueError:
+        return {
+            "statusCode": 400,
+            "body": json.dumps({"error": "uid must be an integer"})
+        }
+
+    # Step 1: Obtain JWT
+    jwt = _gEtMyJwT(uid, password)
+    if not jwt:
+        return {
+            "statusCode": 401,
+            "body": json.dumps({"error": "Failed to obtain JWT"})
+        }
+
+    # Step 2: Build headers (same as follow_cap.py)
+    headers = {
+        "Authorization": f"Bearer {jwt}",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Accept-Encoding": "deflate, gzip",
+        "Releaseversion": "OB54",
+        "User-Agent": "UnityPlayer/2022.3.47f1 (UnityWebRequest/1.0, libcurl/8.5.0-DEV)",
+        "Accept": "*/*",
+        "X-Unity-Version": "2022.3.47f1",
+        "X-Ga": "v1 1",
+    }
+
+    # Step 3: Send fixed request
+    try:
+        resp = requests.post(URL, data=REQUEST_BYTES, headers=headers, timeout=15)
+        if resp.status_code != 200:
             return {
-                "status": "error",
-                "error": f"API returned status code {response.status_code}",
-                "details": response.text[:200] if response.text else "No response body"
+                "statusCode": 502,
+                "body": json.dumps({"error": f"Upstream HTTP {resp.status_code}"})
             }
-            
-    except requests.exceptions.Timeout:
-        return {"status": "error", "error": "Request timed out (30 seconds)"}
-    except requests.exceptions.ConnectionError:
-        return {"status": "error", "error": "Connection error - cannot reach Garena API"}
-    except requests.exceptions.RequestException as e:
-        return {"status": "error", "error": f"Request error: {str(e)}"}
+        total = count_repeated_field_1(resp.content)
+        remains = 50 - total
+        return {
+            "statusCode": 200,
+            "body": json.dumps({
+                "success": True,
+                "followed": total,
+                "remains": remains
+            })
+        }
     except Exception as e:
-        return {"status": "error", "error": f"Unexpected error: {str(e)}"}
-
-HTML_FORM = """
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Garena Bind Info</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body { font-family: system-ui, -apple-system, sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px; }
-        h1 { font-size: 1.8rem; }
-        label { font-weight: bold; display: block; margin-top: 20px; }
-        input[type="text"] { width: 100%; padding: 8px; font-size: 1rem; box-sizing: border-box; }
-        button { margin-top: 10px; padding: 8px 20px; font-size: 1rem; cursor: pointer; }
-        .result { margin-top: 30px; border-top: 1px solid #ddd; padding-top: 20px; }
-        .success { color: #0a0; }
-        .error { color: #a00; }
-        pre { background: #f4f4f4; padding: 10px; overflow: auto; }
-    </style>
-</head>
-<body>
-    <h1>🔐 Garena Bind Info</h1>
-    <form method="POST">
-        <label for="token">Access Token</label>
-        <input type="text" id="token" name="token" placeholder="Enter your Garena access token" required>
-        <button type="submit">Check</button>
-    </form>
-    {% if result %}
-    <div class="result">
-        <h2>Result</h2>
-        {% if result.status == "success" %}
-            <p class="success">✅ Success</p>
-            <p><strong>Summary:</strong> {{ result.summary }}</p>
-            <p><strong>Current email:</strong> {{ result.current_email or "None" }}</p>
-            <p><strong>Pending email:</strong> {{ result.pending_email or "None" }}</p>
-            <p><strong>Countdown:</strong> {{ result.countdown_human }}</p>
-            <details>
-                <summary>Raw API response</summary>
-                <pre>{{ result.raw_response | tojson(indent=2) }}</pre>
-            </details>
-        {% else %}
-            <p class="error">❌ Error: {{ result.error }}</p>
-            {% if result.details %}
-                <p><strong>Details:</strong> {{ result.details }}</p>
-            {% endif %}
-        {% endif %}
-    </div>
-    {% endif %}
-</body>
-</html>
-"""
-
-@app.route('/', methods=['GET', 'POST'])
-def index():
-    result = None
-    if request.method == 'POST':
-        token = request.form.get('token', '').strip()
-        if token:
-            result = get_bind_info(token)
-        else:
-            result = {"status": "error", "error": "No access token provided."}
-    return render_template_string(HTML_FORM, result=result)
-
-# For local development
-if __name__ == '__main__':
-    app.run(debug=True)
+        return {
+            "statusCode": 500,
+            "body": json.dumps({"error": str(e)})
+        }
